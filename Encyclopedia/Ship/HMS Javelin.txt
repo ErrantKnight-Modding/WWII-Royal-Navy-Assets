@@ -1,0 +1,45 @@
+HMS Javelin (1942)
+
+HMS_Javelin.lods
+HMS_Javelin
+
+HMS Javelin (F61) was a J-class fleet destroyer built for the Royal Navy under the 1936 Naval Programme. Laid down at John Brown & Company, Clydebank on 11 October 1937, launched on 23 November 1938, and commissioned on 25 January 1939, Javelin was leader of the 5th Destroyer Flotilla under the command of Captain Lord Louis Mountbatten. The J-class represented a radical and powerful evolution in British destroyer design, featuring two boiler rooms with longitudinal bulkheads, a single massive trunked funnel, three twin 4.7-inch gun mountings, and ten 21-inch torpedo tubes.
+
+Specifications:
+- Displacement: 1,690 long tons (standard), 2,330 long tons (full load)
+- Length: 356 ft 6 in (108.66 m) oa, 339 ft 6 in (103.48 m) pp
+- Beam: 35 ft 8 in (10.87 m)
+- Draught: 13 ft 0 in (3.96 m)
+- Installed Power: 40,000 shp (30,000 kW), 2 Admiralty 3-drum boilers
+- Propulsion: 2 shafts, Parsons geared steam turbines
+- Speed: 36 knots (67 km/h; 41 mph)
+- Complement: 183 to 218 officers and ratings
+
+Armament (as fitted, 1941-1942):
+- 3 x twin 4.7-inch (120 mm) QF Mark XII guns on CP Mark XIX mountings (Mounts A, B, and X)
+- 1 x quadruple 2-pounder (40 mm) "Pom-Pom" Mark VIII AA autocannon
+- 2 x twin 20 mm /70 Oerlikon anti-aircraft autocannons (bridge wings)
+- 2 x single 20 mm /70 Oerlikon anti-aircraft autocannons (aft deck)
+- 2 x quintuple 21-inch (533 mm) Mark IX torpedo tube mountings (10 torpedo tubes)
+- 1 x depth charge rail and 2 x throwers (45 depth charges)
+
+Sensors & Fire Control:
+- Director Control Tower (DCT) with 3-meter coincidence optical rangefinder
+- Type 272 centimetric surface warning radar atop foremast
+- Type 286 / 291 air warning radar
+- Type 124 ASDIC (sonar)
+
+Operational History:
+- Javelin saw intensive wartime action across the North Sea, Channel, Mediterranean, and Indian Oceans.
+- On 29 November 1940, while operating under Captain Lord Louis Mountbatten in the English Channel off Plymouth, the 5th Destroyer Flotilla intercepted the German destroyers Karl Galster, Hans Lody, and Richard Beitzen. In a fierce night torpedo action, Javelin was struck by two German torpedoes simultaneously—one detonating under her forecastle and the other under her stern, blowing off both her bow and her stern and leaving only a 155-foot center section afloat.
+- Through exceptional damage control and the strength of her longitudinal bulkheads, Javelin remained afloat and was towed back to Devonport, where an entire new bow and stern were reconstructed over nearly a year of shipyard work.
+- Recommissioned in January 1942, she participated in Operation Ironclad (the invasion of Madagascar), Mediterranean supply convoys (Operation Vigorous), and the Normandy Landings (Operation Neptune) in June 1944.
+- In November 1945, while deployed in the Mediterranean, a mutiny broke out aboard Javelin—the largest naval disciplinary incident in the postwar Royal Navy—resulting in general courts-martial. She was decommissioned and sold for scrap in 1949.
+
+Mission Editor Notes & Air Combat Stand-Ins:
+- Stand-In for J-, K-, and N-Class Fleet Destroyers: HMS Javelin can serve as a stand-in for her sister ships, including flotilla leader HMS Jervis, Captain Lord Louis Mountbatten's famous HMS Kelly, HMS Kashmir, HMS Kelvin, HMS Kingston, and HMS Kimberley.
+- Key Air Combat Engagements:
+  * Battle of Crete (May 1941): Mountbatten's 5th Destroyer Flotilla (HMS Kelly and HMS Kashmir) fought desperate, continuous anti-aircraft battles against massed Stuka dive-bombers in one of the most intense naval-air engagements of the Mediterranean war.
+  * Battle of Cape Matapan (March 1941): Flotilla leader HMS Jervis leading the screening destroyers for the fleet carrier HMS Formidable.
+  * Operation Pedestal (August 1942): Providing inner fleet escort and anti-aircraft protection against Axis torpedo and level bombers.
+  * Operation Overlord / Normandy Landings (June 1944): HMS Jervis, HMS Javelin, and HMS Kelvin (which carried Prime Minister Winston Churchill to the Normandy beachhead) screening invasion fleets, providing shore bombardment, and defending against Luftwaffe night raiders and guided glide bombs.

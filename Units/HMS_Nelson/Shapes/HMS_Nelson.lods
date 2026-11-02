@@ -1,0 +1,13 @@
+-- HMS Nelson (1941) DCS World LOD Definition
+-- Eagle Dynamics Standard Multi-EDM LOD Container
+
+model = {
+    lods = {
+        {"HMS_Nelson.edm",       1800.0},
+        {"HMS_Nelson_LOD_1.edm", 5500.0},
+        {"HMS_Nelson_LOD_2.edm", 18000.0},
+        {"HMS_Nelson_LOD_3.edm", 60000.0},
+    },
+    collision       = "HMS_Nelson_collision.edm",
+    collision_shell = "HMS_Nelson_collision.edm",
+}

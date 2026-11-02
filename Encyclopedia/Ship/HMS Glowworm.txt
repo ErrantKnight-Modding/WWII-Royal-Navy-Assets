@@ -1,0 +1,43 @@
+HMS Glowworm (1940)
+
+HMS_Glowworm.lods
+HMS_Glowworm
+
+HMS Glowworm (H92) was a G-class fleet destroyer built for the Royal Navy under the 1933 Naval Programme. Laid down at John I. Thornycroft & Company, Woolston on 15 August 1934, launched on 22 July 1935, and commissioned on 5 January 1936, Glowworm was chosen as the test platform for experimental quintuple 21-inch torpedo tube mountings (giving her a devastating broadside of 10 torpedoes). She earned eternal naval renown during the Norwegian Campaign for her gallant single-ship action against the German heavy cruiser Admiral Hipper.
+
+Specifications:
+- Displacement: 1,350 long tons (standard), 1,883 long tons (full load)
+- Length: 323 ft (98.5 m) pp, 329 ft (100.3 m) oa
+- Beam: 33 ft (10.1 m)
+- Draught: 12 ft 5 in (3.78 m)
+- Installed Power: 34,000 shp (25,000 kW), 3 Admiralty 3-drum boilers
+- Propulsion: 2 shafts, Parsons geared steam turbines
+- Speed: 36 knots (67 km/h; 41 mph)
+- Complement: 145 officers and ratings
+
+Armament (as fitted, 1940):
+- 4 x single 4.7-inch (120 mm) QF Mark IX guns on CP XXII mountings (Turrets A, B, X, Y)
+- 2 x quadruple Vickers .50-inch (12.7 mm) Mark III anti-aircraft heavy machine guns
+- 2 x quintuple 21-inch (533 mm) PR.I torpedo tube mountings (10 torpedo tubes)
+- 1 x depth charge rail and 2 x throwers (20 depth charges)
+
+Sensors & Fire Control:
+- 3-meter coincidence optical rangefinder director atop bridge
+- Type 286 metric early warning radar
+- Type 124 ASDIC (sonar)
+
+Operational History & The Ramming of Admiral Hipper:
+- In April 1940, while escorting the battlecruiser HMS Renown during Operation Wilfred (the mining of Norwegian waters), Glowworm lost a man overboard in severe squalls and detached to search for him.
+- On the morning of 8 April 1940, in heavy sea fog, Glowworm encountered the German destroyers Bernd von Arnim and Paul Jacobi, escorting the German invasion fleet for Trondheim (Operation Weserübung).
+- As Glowworm engaged the German destroyers, the 14,000-ton heavy cruiser Admiral Hipper emerged from the squall, opening fire with her eight 20.3 cm (8-inch) guns.
+- Severely outgunned and heavily damaged, Lieutenant Commander Gerard Broadmead Roope laid a dense smoke screen, manoeuvred to launch a full 10-torpedo broadside from her quintuple mounts, and then turned at maximum speed out of the smoke to ram the cruiser.
+- Glowworm struck Admiral Hipper on the starboard side aft of the forward anchor, gouging open several compartments, tearing off over 130 feet of the cruiser's outer belt armour, and causing a permanent list with over 500 tons of flooding before breaking away and sinking with her colours flying.
+- Hipper's commander, Kapitän zur See Hellmuth Heye, stood by to rescue 40 British survivors and later transmitted a recommendation through the International Red Cross praising the bravery of Glowworm's captain. Lt. Cdr. Roope was posthumously awarded the Victoria Cross—the first VC awarded in the Royal Navy during World War II.
+
+Mission Editor Notes & Air Combat Stand-Ins:
+- Stand-In for G- and H-Class Fleet Destroyers: HMS Glowworm can serves as a stand-in for her G-class sisters, including flotilla leader HMS Grenville, HMS Greyhound, HMS Gallant, HMS Griffin, HMS Grafton, and closely related H-class sisters (HMS Hardy, HMS Havock, HMS Hotspur, HMS Hero).
+- Key Air Combat Engagements:
+  * Norwegian Campaign (April-June 1940): Destroyer screening and anti-aircraft escort during British carrier air operations and coastal troop landings under heavy Luftwaffe dive-bombing.
+  * Dunkirk Evacuation / Operation Dynamo (May-June 1940): Sister ships HMS Gallant, HMS Grafton, and HMS Grenade evacuating troops from the beaches of Dunkirk under ferocious, concentrated dive-bombing by Luftwaffe Ju 87 Stukas.
+  * Battle of Cape Matapan (March 1941): Greyhound, Griffin, and Havock screening the carrier HMS Formidable as her aircraft launched the strikes that crippled the Italian fleet.
+  * Battle of Crete (May 1941): Greyhound and Hero fighting desperate running air-defence battles against swarms of German Stukas and Ju 88s in the Aegean Sea.

@@ -1,0 +1,54 @@
+HMS Dido (1942)
+
+HMS_Dido.lods
+HMS_Dido
+
+HMS Dido (37) was the lead ship of her class of light anti-aircraft cruisers built for the Royal Navy under the 1936 Naval Programme. Laid down at Cammell Laird, Birkenhead on 20 October 1937, launched on 18 July 1939, and commissioned on 30 September 1940, Dido was designed specifically to provide comprehensive, high-angle anti-aircraft and surface fleet escort for battle squadrons and carrier task groups. The class introduced the dual-purpose 5.25-inch (133 mm) QF Mark I gun in five enclosed power-operated twin turrets, giving Dido an exceptionally dense volume of long-range anti-aircraft barrage fire.
+
+Specifications:
+- Displacement: 5,600 long tons (standard), 6,850 to 7,200 long tons (full load wartime)
+- Length: 512 ft 0 in (156.06 m) oa, 485 ft 0 in (147.83 m) pp
+- Beam: 50 ft 6 in (15.39 m)
+- Draught: 14 ft 0 in (4.27 m) mean, 17 ft 2 in (5.23 m) deep load
+- Installed Power: 62,000 shp (46,000 kW), 4 Admiralty 3-drum water-tube boilers
+- Propulsion: 4 shafts, Parsons single-reduction geared steam turbines
+- Speed: 32.25 knots (59.7 km/h; 37.1 mph)
+- Complement: 480 officers and ratings (wartime standard)
+
+Armor Protection:
+- Main Belt: 3.0 in (76 mm) side belt over machinery and ammunition spaces
+- Armored Deck: 1.0 in (25 mm) over machinery spaces, 2.0 in (51 mm) over magazines
+- Bulkheads: 1.0 in (25 mm) forward and aft transverse citadel bulkheads
+- Turrets: 0.5 in (13 mm) splinter armor
+- Barbettes: 0.5 to 1.0 in (13 to 25 mm)
+
+Armament (as fitted, 1941-1942):
+- 10 x 5.25-inch (133 mm) /50 caliber QF Mark I dual-purpose guns in 5 twin Mark II enclosed power-operated mountings (Turrets 'A', 'B', 'Q' forward, 'X' and 'Y' aft)
+  * Ceiling: 46,500 ft (14,170 m) at +70 deg elevation
+  * Surface Range: 23,400 yd (21,400 m) at +45 deg elevation
+  * Rate of Fire: 10 to 12 rounds per minute per gun
+- 8 x 2-pounder (40 mm) QF Mark VIII "Pom-Pom" autocannons in 2 quadruple Mark VII power-driven mountings
+- 5 x single 20 mm /70 Oerlikon anti-aircraft autocannons on pedestal mountings
+- 6 x 21-inch (533 mm) Mark IX torpedo tubes in 2 triple TR III mountings (port and starboard)
+
+Sensors & Fire Control:
+- Low-Angle Director Control Tower (DCT) atop bridge with Type 284 surface fire control radar
+- 2 x High Angle Control System (HACS) Mark III dual-purpose directors fitted with Type 285 radar (bridge tower and aft deckhouse)
+- Type 281 metric long-range air warning radar on foremast and mainmast
+- 4 x 44-inch (112 cm) high-intensity searchlight projectors
+- Type 128 ASDIC (sonar)
+
+Operational History:
+- Mediterranean Theater & Malta Convoys: Dido served with legendary distinction in the Mediterranean as part of Force H and the 15th Cruiser Squadron. She escorted vital convoys to besieged Malta, including Operations Substance, Halberd, Harpoon, and Vigorous.
+- Battle of Crete (May 1941): Dido fought under continuous Axis dive-bombing attacks while intercepting German troop flotillas and evacuating Allied forces from Heraklion. On 29 May 1941, she was struck by a bomb on 'B' turret that caused severe casualties and structural damage, but her damage control enabled her to reach Alexandria.
+- Second Battle of Sirte (22 March 1942): Under Rear-Admiral Philip Vian, Dido and fellow light cruisers boldly engaged a vastly superior Italian fleet, successfully driving them off behind smoke screens to protect convoy MW 10.
+- Mediterranean Invasions (1943-1944): Dido provided heavy naval gunfire support and air defence during Operation Husky (Sicily), Operation Avalanche (Salerno), and Operation Shingle (Anzio).
+- Arctic and Western Europe: In late 1944, she escorted Arctic supply convoys to the Soviet Union. In May 1945, Dido accepted the surrender of German naval forces at Copenhagen, including the heavy cruisers Prinz Eugen and Nürnberg. She was decommissioned in 1947.
+
+Mission Editor Notes & Air Combat Stand-Ins:
+- Stand-In for Dido-Class Anti-Aircraft Cruisers: HMS Dido can serves as a stand-in for her 15 sister ships, including HMS Euryalus, HMS Cleopatra, HMS Phoebe, HMS Sirius, HMS Scylla, HMS Charybdis, HMS Argonaut, and HMS Hermione. As the Royal Navy's dedicated fleet anti-aircraft cruisers, they provided essential air umbrellas for carrier task groups and convoy operations across all WWII theaters.
+- Key Air Combat Engagements:
+  * Battle of Crete (May 1941): Dido, Naiad, and Phoebe fighting desperate running air-defence battles under heavy, uncontested Stuka and Ju 88 dive-bombing attacks.
+  * Operation Pedestal (August 1942): Phoebe, Sirius, and Charybdis providing dense high-altitude anti-aircraft barrages to protect aircraft carriers and merchantmen from massed Axis air assaults.
+  * Operation Torch (November 1942): Fleet air defence screening Allied carrier and assault fleets off French North Africa.
+  * Operation Overlord / Normandy Landings (June 1944): Sister ships HMS Scylla, HMS Argonaut, HMS Bellona, and HMS Diadem screening the invasion anchorages against German torpedo bombers, Ju 88 night raids, and Fritz X / Hs 293 guided anti-ship missiles.

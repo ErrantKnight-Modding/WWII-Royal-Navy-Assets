@@ -1,0 +1,42 @@
+HMS Foxhound (1940)
+
+HMS_Foxhound.lods
+HMS_Foxhound
+
+HMS Foxhound (H69) was an F-class fleet destroyer built for the Royal Navy under the 1932 Naval Programme. Laid down at John Brown & Company, Clydebank on 21 August 1933, launched on 12 October 1934, and commissioned on 6 June 1935, Foxhound rendered distinguished service throughout the Second World War.
+
+Specifications:
+- Displacement: 1,405 long tons (standard), 1,950 long tons (full load)
+- Length: 329 ft (100.3 m) oa, 315 ft (96.0 m) pp
+- Beam: 33 ft 3 in (10.13 m)
+- Draught: 12 ft 6 in (3.81 m)
+- Installed Power: 36,000 shp (27,000 kW), 3 Admiralty 3-drum boilers
+- Propulsion: 2 shafts, Parsons geared steam turbines
+- Speed: 36 knots (67 km/h; 41 mph)
+- Complement: 145 officers and ratings
+
+Armament (as fitted, 1940-1941):
+- 4 x single 4.7-inch (120 mm) QF Mark IX guns on CP XXII mountings (Turrets A, B, X, Y)
+- 2 x quadruple Vickers .50-inch (12.7 mm) Mark III anti-aircraft heavy machine guns
+- 2 x quadruple 21-inch (533 mm) torpedo tube mountings
+- 1 x depth charge rack and 2 x throwers (20 depth charges)
+
+Sensors & Fire Control:
+- 3-meter coincidence optical rangefinder director atop bridge
+- Type 286 / Type 271 surface search radar
+- Type 124 ASDIC (sonar)
+
+Operational History:
+- Assigned to the 8th Destroyer Flotilla, Home Fleet.
+- On 14 September 1939, Foxhound assisted in the sinking of German submarine U-39 after it attempted an attack on the aircraft carrier HMS Ark Royal.
+- During the Norwegian Campaign in April 1940, Foxhound participated in the Second Battle of Narvik under the battleship HMS Warspite, engaging German destroyers in Ofotfjord.
+- Transferred to Force H based at Gibraltar in mid-1940, escorting capital ships during Operation Catapult, Operation Collar, and multiple Malta relief convoys.
+- In 1944, Foxhound was transferred to the Royal Canadian Navy and renamed HMCS Qu'Appelle (H69), escorting Allied invasion fleets during Operation Overlord in the English Channel and hunting U-boats in the Bay of Biscay.
+
+Mission Editor Notes & Air Combat Stand-Ins:
+- Stand-In for E- and F-Class Fleet Destroyers: HMS Foxhound can serve as an stand-in for her F-class sisters, including flotilla leader HMS Faulknor, HMS Forester, HMS Foresight, HMS Fury, and near-identical E-class sisters (HMS Electra, HMS Express, HMS Escort).
+- Key Air Combat Engagements:
+  * Hunt for the Bismarck (May 1941): Foxhound, Forester, and Fury screened Force H capital ships, guarding the aircraft carrier HMS Ark Royal as her Swordfish torpedo bombers launched their fateful strikes against Bismarck.
+  * Operation Pedestal (August 1942): Foresight and Fury provided close anti-aircraft screen for aircraft carriers and vital merchant supply ships under relentless Axis dive-bombing and aerial torpedo attacks.
+  * Arctic Convoys (1942-1944): Faulknor and Fury escorted northern convoys (PQ-17, PQ-18) against Luftwaffe anti-shipping bombers (He 111, Ju 88) operating from northern Norway.
+  * Operation Overlord / Normandy Landings (June 1944): Faulknor and Fury provided anti-aircraft protection and naval gunfire support off Juno Beach; Foxhound herself served as HMCS Qu'Appelle (H69) screening the invasion fleet against U-boats and Luftwaffe night raiders in the English Channel.- Historical Units Filter Compatibility: This asset does not specify an operational expiration date ('died') in DCS World, allowing mission designers to deploy her in any WWII mission year (1939–1945) even when the Mission Editor historical units filter clock is active.

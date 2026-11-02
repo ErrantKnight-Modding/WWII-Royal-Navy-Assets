@@ -1,0 +1,53 @@
+HMS Leander (1942)
+
+HMS_Leander.lods
+HMS_Leander
+
+HMS Leander (75) was the lead ship of her class of light cruisers built for the Royal Navy under the 1929 Naval Programme. Laid down at Devonport Dockyard on 8 September 1930, launched on 24 September 1931, and commissioned on 24 March 1933, Leander was designed as a modern, versatile fleet scout and trade-route protector under the limits of the London Naval Treaty. Featuring eight 6-inch guns in four twin turrets, balanced armor protection, high endurance, and catapult aircraft facilities, the Leander class represented the backbone of the Royal Navy's interwar light cruiser force.
+
+Specifications:
+- Displacement: 7,270 long tons (standard), 9,740 long tons (full load wartime)
+- Length: 554 ft 6 in (169.01 m) oa, 522 ft 0 in (159.11 m) pp
+- Beam: 56 ft 0 in (17.07 m)
+- Draught: 16 ft 0 in (4.88 m) mean, 19 ft 1 in (5.82 m) deep load
+- Installed Power: 72,000 shp (54,000 kW), 4 Admiralty 3-drum water-tube boilers
+- Propulsion: 4 shafts, Parsons geared steam turbines
+- Speed: 32.5 knots (60.2 km/h; 37.4 mph)
+- Range: 5,730 nautical miles (10,610 km) at 13 knots
+- Complement: 570 officers and ratings (wartime standard)
+
+Armor Protection:
+- Main Belt: 3.0 in (76 mm) side armor belt over machinery and boilers
+- Armored Deck: 1.25 in (32 mm) over machinery and ammunition magazines
+- Bulkheads: 1.0 in (25 mm) transverse citadel bulkheads
+- Turret Faces: 1.0 in (25 mm) splinter protection
+- Magazine Crown: 2.0 in (51 mm)
+
+Armament (as fitted, 1941-1942):
+- 8 x 6-inch (152 mm) /50 caliber BL Mark XXIII naval rifles in 4 twin Mark XXI enclosed power-operated turrets ('A' and 'B' forward, 'X' and 'Y' aft)
+  * Maximum Surface Range: 25,500 yd (23,300 m) at +45 deg elevation
+  * Rate of Fire: 8 rounds per minute per gun
+- 4 x 4-inch (102 mm) /45 caliber QF Mark V anti-aircraft guns on single High Angle Mark IV mountings
+  * Maximum Anti-Aircraft Ceiling: 28,750 ft (8,760 m)
+- 12 x 0.50-inch (12.7 mm) Vickers Mark III anti-aircraft heavy machine guns in 3 quadruple Mark III mountings
+- 8 x 21-inch (533 mm) Mark IX torpedo tubes in 2 quadruple mountings (port and starboard)
+- Aircraft Facility: Midships rotating cordite catapult with 1 x Supermarine Walrus amphibious reconnaissance flying boat
+
+Sensors & Fire Control:
+- Main Battery Director Control Tower (DCT) with 15-foot coincidence optical rangefinder
+- High Angle Control System (HACS) anti-aircraft director atop aft superstructure
+- Type 284 surface fire control radar and Type 286 air warning radar
+- Type 123 ASDIC (sonar) installation
+
+Operational History:
+- Pre-War & New Zealand Service: Leander served as flagship of the New Zealand Division of the Royal Navy from 1937, operating extensively throughout the South Pacific.
+- Red Sea & Indian Ocean (1940-1941): Following the outbreak of war, Leander escorted troop convoys in the Indian Ocean. On 27 February 1941, she intercepted and sank the Italian armed merchant cruiser Ramb I off the Maldives.
+- Pacific Operations & Kolombangara (1943): Transferred to the Allied South Pacific Command under US Admiral Halsey, Leander escorted carrier battle groups in the Solomons. On 12 July 1943, during the fierce night Battle of Kolombangara, she helped sink the Japanese light cruiser Jintsu but was struck amidships by a Type 93 "Long Lance" torpedo, sustaining severe damage that required extensive repairs until the end of the war.
+
+Mission Editor Notes & Air Combat Stand-Ins:
+- Stand-In for Leander-Class Light Cruisers: HMS Leander can serve as a stand-in for her sister ships HMS Ajax, HMNZS Achilles, HMS Orion, and HMS Neptune.
+- Key Air Combat Engagements:
+  * Battle of Crete (May 1941): Sister ships HMS Ajax and HMS Orion fought desperate running air-defence actions while defending Allied naval forces against waves of German Ju 87 Stukas and Ju 88 dive-bombers. Orion absorbed catastrophic bomb hits while shooting down attacking aircraft, surviving thanks to heroic damage control.
+  * Battle of Cape Matapan (March 1941): Orion and Ajax formed the forward scouting force that coordinated with Fleet Air Arm carrier torpedo strikes from HMS Formidable.
+  * Operation Overlord / Normandy Landings (June 1944): HMS Ajax and HMS Orion provided thunderous 6-inch naval gunfire support off Gold Beach, knocking out German coastal artillery and armored concentrations under Allied tactical air umbrellas.
+  * Pacific Fleet Carrier Escort (1943): Joint air defense screening alongside US Navy carrier task forces in the South Pacific.

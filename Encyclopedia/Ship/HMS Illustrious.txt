@@ -1,0 +1,62 @@
+HMS Illustrious (1940)
+
+HMS_Illustrious.edm
+HMS_Illustrious
+
+HMS Illustrious (87) was the lead ship of her class of armored fleet aircraft carriers built for the Royal Navy under the 1936 Naval Programme. Laid down at Vickers-Armstrongs, Barrow-in-Furness on 27 April 1937, launched on 5 April 1939, and commissioned on 16 April 1940, Illustrious introduced a revolutionary design doctrine: the fully enclosed, heavily armored "hangar citadel box" capable of withstanding direct 500-lb bomb hits on the flight deck. Her innovative armor scheme fundamentally altered naval aviation survivability and set the standard for wartime fleet carriers.
+
+Specifications:
+- Displacement: 23,000 long tons (standard), 28,619 long tons (full load wartime)
+- Length overall: 738 ft 6 in (225.1 m)
+- Waterline length: 710 ft 0 in (216.4 m)
+- Beam (hull): 95 ft 9 in (29.18 m)
+- Flight Deck width: 116 ft 2 in (35.4 m)
+- Draught: 28 ft 10 in (8.8 m) deep load
+- Installed Power: 111,000 shp (82,770 kW), 6 Admiralty 3-drum water-tube boilers
+- Propulsion: 3 shafts, Parsons geared steam turbines (triple screw propulsion)
+- Speed: 30.5 knots (56.5 km/h; 35.1 mph)
+- Range: 10,700 nautical miles (19,800 km) at 10 knots
+- Complement: 1,299 ship's company + 685 air wing personnel
+
+Armor Protection ("The Armored Box"):
+- Flight Deck: 3.0 in (76 mm) non-magnetic cemented steel armor over the 456-foot central flight deck
+- Hangar Sides: 4.5 in (114 mm) armored citadel walls enclosing the hangar space
+- Hangar Deck: 2.5 to 3.0 in (64 to 76 mm) armored lower deck protecting machinery and magazines
+- Main Belt: 4.5 in (114 mm) water-line armor belt
+- Bulkheads: 2.5 to 4.5 in (64 to 114 mm) armored transverse box bulkheads
+
+Aviation Facilities & Air Group:
+- Flight Deck: 738 ft x 116 ft (225.1 m x 35.4 m) unobstructed flight deck with starboard island
+- Aircraft Lifts: 2 x centreline electric/hydraulic elevators (45 ft x 22 ft)
+- Catapult: 1 x BH-III hydro-pneumatic catapult on forward port deck (capable of launching 14,000-lb aircraft at 66 knots)
+- Arresting Gear: 4 x transverse arresting wires (Mk IV/Mk V) across aft deck + 2 hydraulic safety barriers
+- Aircraft Capacity: 36 to 57 aircraft depending on outrigger/deck park configuration (Fairey Swordfish, Fairey Fulmar, Hawker Sea Hurricane, Grumman Martlet/Wildcat, Vought F4U Corsair, Fairey Barracuda, Supermarine Seafire)
+
+Armament (as fitted, 1940-1942):
+- 16 x 4.5-inch (114 mm) /45 caliber QF Mark III dual-purpose guns in 8 twin BD Mark II enclosed mountings in sponsons below flight deck level
+  * Maximum Anti-Aircraft Ceiling: 41,000 ft (12,500 m) at +80 deg elevation
+  * Maximum Surface Range: 20,700 yd (18,900 m) at +45 deg elevation
+  * Rate of Fire: 12 rounds per minute per gun
+- 48 x 2-pounder (40 mm) QF Mark VIII "Pom-Pom" autocannons in 6 octuple Mark VI power-worked mountings
+  * Rate of Fire: 960 to 1,150 rounds per minute per mount
+
+Sensors & Fire Control:
+- 6 x High Angle Control System (HACS) Mk IV dual-purpose directors fitted with Type 285 radar
+- Type 79 / Type 279 metric long-range air warning radar on foremast and island
+- Type 281B air warning and Type 277 height-finding radar (later refits)
+
+Operational History:
+- Battle of Taranto (11-12 November 1940): In the most famous carrier action of early World War II, Illustrious launched 21 Fairey Swordfish torpedo bombers in a night strike against the Italian battle fleet in Taranto harbour. The raid sank the battleship Conte di Cavour and crippled battleships Littorio and Caio Duilio, revolutionizing naval history and demonstrating the primacy of carrier-borne air power.
+- Operation Excess & Stuka Dive-Bomb Assault (10 January 1941): While escorting a Mediterranean convoy off Malta, Illustrious was targeted by three massed waves of Luftwaffe Ju 87 Stukas from Fliegerkorps X. She absorbed six direct 500 kg (1,100 lb) bomb hits and three near-misses. Her 3-inch armored flight deck prevented catastrophic magazine detonations, allowing her to reach Malta and survive further heavy bombing in Grand Harbour before sailing to Norfolk, Virginia, for extensive repairs.
+- Indian Ocean & British Pacific Fleet (1942-1945): After refitting, Illustrious spearheaded carrier air strikes against Japanese positions at Sabang, Palembang, and the Andaman Islands, before joining Task Force 57 for Operation Iceberg (the Battle of Okinawa).
+
+Mission Editor Notes & Air Combat Stand-Ins:
+- Stand-In for Illustrious-Class Armored Fleet Carriers: HMS Illustrious can serve as a stand-in for her sister ships HMS Victorious, HMS Formidable, and HMS Indomitable.
+- Key Air Combat Engagements:
+  * Battle of Taranto (November 1940): The landmark night strike by Fairey Swordfish that neutralized the Italian battle fleet.
+  * Operation Excess (January 1941): Unprecedented massed dive-bombing defense testing British armored flight deck doctrine against the Luftwaffe.
+  * Battle of Cape Matapan (March 1941): Sister ship HMS Formidable's air group launched the decisive Swordfish and Albacore torpedo strikes that disabled Italian heavy cruiser Pola and damaged the battleship Vittorio Veneto.
+  * Hunt for the Bismarck (May 1941): Sister ship HMS Victorious launched the initial Swordfish torpedo attack that struck Bismarck's midships armor belt in the North Atlantic.
+  * Operation Pedestal (August 1942): Sister ships HMS Victorious and HMS Indomitable provided fighter combat air patrol over the convoy under fierce Axis aerial assault.
+  * Operation Torch (November 1942): Fleet carrier air support covering the Allied amphibious landings in North Africa.
+  * British Pacific Fleet & Operation Iceberg / Okinawa (1945): Task Force 57 armored flight decks successfully withstanding Kamikaze suicide strikes off the Sakishima Gunto, allowing air operations to resume within hours.

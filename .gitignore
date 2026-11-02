@@ -1,0 +1,22 @@
+# OS generated files
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Temporary & backup files
+*.tmp
+*.bak
+*.log
+*~
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Blender auto-saves / leftovers
+*.blend1
+*.blend2
+*.blend@
+
+# Local ModelViewer2 directory junctions
+Units/**/Shapes/textures/

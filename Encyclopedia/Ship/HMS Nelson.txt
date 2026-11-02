@@ -1,0 +1,88 @@
+HMS Nelson (1942)
+
+HMS_Nelson.lods
+HMS_Nelson
+
+
+Name: HMS Nelson (28)
+Type: Nelson-class Battleship
+Pennant Number: 28
+Builder: Armstrong Whitworth, High Walker, Newcastle upon Tyne
+Laid Down: 28 December 1922
+Launched: 3 September 1925
+Commissioned: 15 August 1927
+
+Displacement, tons:
+Standard: 33,950 long tons (34,490 t)
+Full Load (1941): 38,000 long tons (38,610 t)
+
+Dimensions:
+Length overall: 216.4 m (710 ft 0 in)
+Beam: 32.3 m (106 ft 0 in)
+Draught (mean): 10.2 m (33 ft 6 in)
+
+Machinery & Propulsion:
+Boilers: 8 x Admiralty 3-drum water-tube boilers (superheated steam)
+Turbines: 2 x Brown-Curtis geared steam turbine sets, 2 shafts
+Output: 45,000 shp (33,550 kW)
+Maximum Speed: 23.8 knots (44.1 km/h)
+Range: 7,000 nautical miles (13,000 km) at 16 knots
+Fuel Capacity: 3,800 tons fuel oil
+
+Complement (1941 Wartime):
+1,361 officers and enlisted men (flagship fit)
+
+Armor Protection ("All-or-Nothing" Scheme):
+Internal Main Belt: 14.0 in (356 mm) over magazines, 13.0 in (330 mm) over machinery (inclined 72 deg)
+Armored Deck: 6.25 in (159 mm) over magazines, 3.75 in (95 mm) over machinery
+Bulkheads: 8 to 12 in (203 to 305 mm) forward and aft citadel transverse bulkheads
+Turret Faces: 16.0 in (406 mm)
+Turret Sides: 9.0 to 11.0 in (229 to 279 mm)
+Turret Roofs: 7.25 in (184 mm)
+Barbettes: 15.0 to 12.0 in (381 to 305 mm)
+Conning Tower: 14.0 in (356 mm) face, 10.0 in (254 mm) sides
+Torpedo Bulkhead: 1.5 in (38 mm) two-layer internal longitudinal bulkheads
+
+Armament (1941 Fit):
+Main Battery:
+9 x 16-inch (406 mm) /45 caliber BL Mark I naval rifles mounted in 3 triple hydraulically-operated Mark I turrets ('A', 'B', 'X') all situated on the foredeck forward of the bridge.
+- Rate of fire: 1.5-2.0 rounds per minute per gun.
+- Shell weights: 2,048 lb (929 kg) HE Mark I and AP Mark IB.
+- Maximum range: 35,000 m (38,000 yd) at +40 deg elevation.
+
+Secondary Battery:
+12 x 6-inch (152 mm) /50 caliber BL Mark XXII guns in 6 twin Mark XVIII turrets mounted in superfiring tiers on the port and starboard midships superstructure.
+- Maximum range: 23,500 m (25,700 yd) at +45 deg elevation.
+- Anti-surface and light craft defense.
+
+Heavy Anti-Aircraft Battery:
+6 x 4.7-inch (120 mm) /40 caliber QF Mark VIII High Angle guns on single Mark XII power-worked shielded mountings situated on the shelter deck.
+- Anti-aircraft ceiling: 9,500 m (31,000 ft).
+
+Light Anti-Aircraft Battery:
+24 x 2-pdr (40 mm) QF Mark VIII "Pom-Pom" autocannons (3 x octuple Mark V/VI mountings).
+8 x 2-pdr (40 mm) QF Mark VIII "Pom-Pom" autocannons (2 x quadruple Mark VII mountings).
+8 x 0.50-inch (12.7 mm) Vickers Mark III heavy machine guns (2 x quadruple Mark III mountings on bridge wings).
+
+Fire Control & Radar Suite (1941):
+- Main Battery Director Control Tower (DCT) atop Queen Anne's Mansion bridge tower fitted with Admiralty Fire Control Table (AFCT) Mk I and Type 284 50 cm metric fire control radar.
+- Auxiliary Aft Main Battery DCT fitted with Type 284 radar.
+- 2 x High Angle Control System (HACS) Mk III anti-aircraft directors with Type 285 radar (forward and aft island).
+- 2 x Secondary Battery 6-inch Director Control Towers (Port and Starboard).
+- Type 281 long-range air warning radar on fore and mainmast tops.
+- 4 x 44-inch (112 cm) high-intensity fighting searchlight projectors.
+
+Historical Overview:
+HMS Nelson was the lead ship of her class of two dreadnought battleships built for the Royal Navy under the strict 35,000-ton limitations imposed by the 1922 Washington Naval Treaty. To economize on armored citadel length and weight, the design pioneered the radical concentration of the entire main battery into three triple 16-inch turrets mounted forward of the bridge tower ("Queen Anne's Mansion"), earning the pair the nicknames "Nelsol" and "Rodnol" (after Admiralty auxiliary fleet tankers) and the "Cherry Tree class" (cut down by the Washington Treaty).
+
+During World War II, HMS Nelson played a distinguished role across multiple naval theaters. Serving as flagship of Force H based at Gibraltar under Vice-Admiral Sir James Somerville, Nelson escorted critical relief convoys through the Mediterranean to besieged Malta, participating in Operation Substance and Operation Halberd. During Halberd in September 1941, she was struck forward by an Italian aerial torpedo while protecting convoy transports, surviving with severe flooding thanks to her formidable multi-compartment torpedo protection system.
+
+Following repairs, Nelson supported Operation Torch (the Allied invasion of French North Africa) in November 1942. In July and September 1943, her 16-inch guns provided heavy bombardment during Operation Husky (the invasion of Sicily) and Operation Avalanche (Salerno). On 29 September 1943, General Dwight D. Eisenhower and Italian Marshal Pietro Badoglio signed the instrument of the Long Armistice of Cassibile aboard HMS Nelson in Malta harbor.
+
+In June 1944, Nelson participated in Operation Overlord (the Normandy Landings), delivering devastating heavy gunfire support against German coastal defenses and Panzer concentrations inland before suffering mine damage. Deployed to the Indian Ocean in 1945, Nelson accepted the surrender of Japanese forces at Penang and Singapore before returning to Britain to serve as a training ship and flagship of the Home Fleet until her decommissioning in 1948.
+
+Mission Editor Notes & HMS Rodney Stand-In:
+- Stand-In for HMS Rodney (29): HMS Nelson can serve as operational stand-in for her sister ship HMS Rodney. Nelson and Rodney were the sole members of the Nelson class, sharing identical hull dimensions, displacement, armor protection, the radical all-forward concentration of three triple 16-inch BL Mark I turrets ('A', 'B', 'X'), and the distinctive "Queen Anne's Mansion" bridge tower.
+- Anti-Aircraft Configuration (UP Rocket Removal): Early in the war (1940-1941), both ships were equipped with experimental 7-inch Unrotated Projectile (UP) anti-aircraft rocket launchers (four mounts on Nelson, one on Rodney). Following operational trials that proved the system hazardous and ineffective, the UP launchers were removed from both vessels during refits in late 1941 / early 1942 in favor of additional 2-pounder octuple Pom-Poms and 20mm Oerlikons. The absence of UP rocket launchers on this model accurately represents the class in its post-1942 mid-to-late war combat fit.
+- Submerged Torpedo Tubes: Both battleships were originally built with two submerged 24.5-inch torpedo tubes in the underwater bow citadel below the waterline. Following mine damage in December 1939, Nelson's submerged torpedo room was decommissioned. While Rodney famously retained hers to launch submerged torpedoes against the German battleship Bismarck on 27 May 1941 (the only known instance in naval history of a battleship torpedoing another), these submerged underwater tubes were invisible externally and were decommissioned in later refits.
+- Major Operations for Rodney Scenarios: Deploying this asset as HMS Rodney enables historical recreation of her landmark operations, including the final action against the Bismarck (May 1941), Force H Malta convoys and Operation Pedestal (August 1942), Operation Torch (November 1942), Operation Avalanche at Salerno (September 1943), heavy naval gunfire support (NGS) off Sword and Juno beaches during Operation Overlord (Normandy, June 1944), and Arctic convoy escort (1944).

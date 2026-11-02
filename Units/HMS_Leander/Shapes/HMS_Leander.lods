@@ -1,0 +1,10 @@
+model = {
+    lods = {
+        {"HMS_Leander.edm", 1500.0},
+        {"HMS_Leander_LOD_1.edm", 4500.0},
+        {"HMS_Leander_LOD_2.edm", 15000.0},
+        {"HMS_Leander_LOD_3.edm", 45000.0}
+    },
+    collision       = "HMS_Leander_collision.edm",
+    collision_shell = "HMS_Leander_collision.edm"
+}

@@ -1,0 +1,76 @@
+HMS Glorious (1940)
+
+HMS_Glorious.lods
+HMS_Glorious
+
+Name: HMS Glorious (77)
+Type: Courageous-class Aircraft Carrier
+Pennant Number: 77
+Builder: Harland and Wolff, Belfast (Reconstruction at Rosyth & Devonport)
+Laid Down: 1 May 1915
+Launched: 20 April 1916
+Commissioned (Cruiser): January 1917
+Recommissioned (Aircraft Carrier): 24 February 1930
+
+Displacement:
+- Standard: 22,500 long tons (22,860 t)
+- Full Load (1940): 27,420 long tons (27,860 t)
+
+Dimensions:
+- Length overall: 239.6 m (786 ft 3 in)
+- Waterline length: 224.1 m (735 ft 3 in)
+- Beam (hull): 27.6 m (90 ft 6 in)
+- Flight Deck width: 30.5 m (100 ft 0 in)
+- Draught (mean): 8.5 m (28 ft 0 in)
+
+Machinery & Propulsion:
+- Boilers: 18 x Yarrow small-tube water-tube boilers (superheated steam)
+- Turbines: 4 x Parsons direct-drive steam turbines, 4 shafts (quad counter-rotating screws)
+- Output: 90,000 shp (67,110 kW)
+- Maximum Speed: 30.5 knots (56.5 km/h)
+- Range: 5,860 nautical miles (10,850 km) at 16 knots
+- Fuel Capacity: 3,450 tons fuel oil
+
+Complement (1940 Wartime):
+- Ship's Company: 1,213 officers and ratings
+- Air Wing Personnel: ~400 aircrew and maintenance ratings
+
+Armor Protection:
+- Main Belt: 2.0 to 3.0 in (51 to 76 mm) side armor over machinery and magazines
+- Armored Decks: 0.75 to 1.0 in (19 to 25 mm) lower deck; 0.75 in (19 mm) forecastle deck
+- Bulkheads: 2.0 to 3.0 in (51 to 76 mm) transverse bulkheads
+- Torpedo Bulkhead: 1.5 in (38 mm) internal anti-torpedo protection
+
+Aviation Facilities & Air Group:
+- Hangars: Two-level fully enclosed hangar deck
+- Flight Deck: Full-length upper flight deck (173.7 m / 570 ft) and forward flying-off deck from upper hangar
+- Aircraft Lifts: 2 x centreline electric elevators (forward and aft)
+- Aircraft Capacity: Up to 48 aircraft (Gloster Sea Gladiator, Fairey Swordfish, Sea Hurricane)
+
+Armament (1939-1940 Fit):
+Main Anti-Aircraft Battery:
+- 16 x single 4.7-inch (120 mm) /45 caliber QF Mark VIII High-Angle dual-purpose guns on Mark XII unshielded pedestal mountings distributed in sponsons along catwalks (port and starboard).
+  * Maximum Elevation: +90 deg
+  * Rate of Fire: 12 rounds per minute per gun
+  * Maximum Surface Range: 16,000 m (17,500 yd)
+  * Maximum Anti-Aircraft Ceiling: 9,750 m (32,000 ft)
+Close-Range Anti-Aircraft Battery:
+- 24 x 2-pounder (40 mm) QF Mark VIII "Pom-Pom" autocannons in 3 octuple Mark VI power-operated mountings (one forward on forecastle flying-off deck, two aft on sponsons).
+  * Rate of Fire: 960 to 1,150 rounds per minute per octuple mount
+  * Effective Range: 3,500 m (3,800 yd)
+- 4 x 0.50-inch (12.7 mm) Vickers Mark III heavy machine guns in 1 quadruple power-assisted Mark III mounting.
+
+Fire Control & Sensors:
+- 4 x High Angle Control System (HACS Mark III) directors with optical rangefinders atop island and sponsons.
+- 4 x 44-inch (112 cm) high-intensity carbon-arc fighting searchlights on island and stern platforms.
+- Type 127 ASDIC (sonar) installation.
+
+Operational History:
+- Interwar Fleet Carrier: Converted from a "Large Light Cruiser" under the Washington Naval Treaty, Glorious served extensively with the Mediterranean Fleet throughout the 1930s, pioneering carrier aviation tactics, night deck landings, and synchronized multi-squadron strikes.
+- Outbreak of War & Indian Ocean: In October 1939, Glorious joined Force J in the Indian Ocean and Red Sea to hunt the German pocket battleship Admiral Graf Spee.
+- Norwegian Campaign (April-June 1940): In April 1940, Glorious was recalled to the Home Fleet for Operation Alphabet. Her Sea Gladiators and Swordfish provided close air support and intercepted Luftwaffe bombers assaulting Allied ground forces at Narvik and Åndalsnes.
+- Historic RAF Fighter Landings (21 May & 7 June 1940): In a daring aviation milestone, RAF No. 263 Squadron (Gloster Gladiators) and No. 46 Squadron (Hawker Hurricanes) flew off Glorious to northern Norwegian airstrips, and on 7 June successfully landed their Hurricanes back aboard Glorious at sea without tailhooks or arresting gear—the first time high-performance land monoplane fighters had ever successfully recovered onto an aircraft carrier.
+- Sinking (8 June 1940): While returning to Scapa Flow escorted only by the fleet destroyers HMS Acasta and HMS Ardent, Glorious was surprised in the Norwegian Sea by the German battleships Scharnhorst and Gneisenau. Caught without reconnaissance patrols aloft, she was hit at extreme range (24,000 m) by 28 cm shells from Scharnhorst that pierced her flight deck into the upper hangar, setting fire to fueled aircraft. Despite heroic torpedo attacks by Acasta and Ardent that severely damaged Scharnhorst, Glorious sank with the loss of over 1,200 men.
+
+Mission Editor Notes & HMS Furious Stand-In:
+- Stand-In for HMS Furious (47): With flight-deck catapults omitted in this configuration, HMS Glorious can serve as an operational stand-in for her sister ship HMS Furious. Unlike Glorious, Furious operated without flight deck catapults throughout World War II, utilizing unobstructed full-length deck runs for takeoff and transverse arrester wires for recoveries. Furious served as a premier frontline fleet carrier throughout 1941–1944, actively flying operations during the Malta Club Runs, Operation Bellows (flying off 38 Spitfires into besieged Malta on 11 August 1942 as part of Operation Pedestal), Operation Torch (North Africa 1942), and the Home Fleet carrier air strikes against the German battleship Tirpitz in northern Norway (Operation Tungsten 1944).
