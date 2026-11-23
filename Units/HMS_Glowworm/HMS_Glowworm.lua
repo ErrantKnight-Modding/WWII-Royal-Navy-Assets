@@ -162,7 +162,7 @@ GT.WS[ws].angles = {
 GT.WS[ws].LN = { [1] = {} }
 set_recursive_metatable(GT.WS[ws].LN[1], GT_t.WS_t.UK_120mm_QF_MkIX_Single.LN[1])
 GT.WS[ws].LN[1].depends_on_unit = main_trackers
-GT.WS[ws].LN[1].BR = { {connector_name = "POINT_GUN_01"} }
+GT.WS[ws].LN[1].BR = { {connector_name = "POINT_GUN_01", recoilArgument = 31, recoilTime = 0.4} }
 
 -- 3. Main Battery Station 2 (Turret B, Forecastle Superfiring, Args 3 & 4)
 ws = GT_t.inc_ws()
@@ -179,7 +179,7 @@ GT.WS[ws].angles = {
 GT.WS[ws].LN = { [1] = {} }
 set_recursive_metatable(GT.WS[ws].LN[1], GT_t.WS_t.UK_120mm_QF_MkIX_Single.LN[1])
 GT.WS[ws].LN[1].depends_on_unit = main_trackers
-GT.WS[ws].LN[1].BR = { {connector_name = "POINT_GUN_02"} }
+GT.WS[ws].LN[1].BR = { {connector_name = "POINT_GUN_02", recoilArgument = 32, recoilTime = 0.4} }
 
 -- 4. Main Battery Station 3 (Turret X, Aft Superfiring, Args 5 & 6)
 ws = GT_t.inc_ws()
@@ -197,7 +197,7 @@ GT.WS[ws].angles = {
 GT.WS[ws].LN = { [1] = {} }
 set_recursive_metatable(GT.WS[ws].LN[1], GT_t.WS_t.UK_120mm_QF_MkIX_Single.LN[1])
 GT.WS[ws].LN[1].depends_on_unit = main_trackers
-GT.WS[ws].LN[1].BR = { {connector_name = "POINT_GUN_03"} }
+GT.WS[ws].LN[1].BR = { {connector_name = "POINT_GUN_03", recoilArgument = 33, recoilTime = 0.4} }
 
 -- 5. Main Battery Station 4 (Turret Y, Aft Lower, Args 7 & 10)
 ws = GT_t.inc_ws()
@@ -215,7 +215,7 @@ GT.WS[ws].angles = {
 GT.WS[ws].LN = { [1] = {} }
 set_recursive_metatable(GT.WS[ws].LN[1], GT_t.WS_t.UK_120mm_QF_MkIX_Single.LN[1])
 GT.WS[ws].LN[1].depends_on_unit = main_trackers
-GT.WS[ws].LN[1].BR = { {connector_name = "POINT_GUN_04"} }
+GT.WS[ws].LN[1].BR = { {connector_name = "POINT_GUN_04", recoilArgument = 34, recoilTime = 0.4} }
 
 -- 6. Fighting Searchlight (Amidships Platform, Args 160 & 161)
 ws = GT_t.inc_ws()

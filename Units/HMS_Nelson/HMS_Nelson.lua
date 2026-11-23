@@ -451,8 +451,8 @@ for i = 1, 3 do
     set_recursive_metatable(GT.WS[ws], GT_t.WS_t.UK_6in_BL_MkXXII_Twin);
     GT.WS[ws].center = 'CENTER_SEC_S' .. i;
     GT.WS[ws].area = 'SEC_S' .. i;
-    GT.WS[ws].drawArgument1 = 30 + (i*2) - 2; -- 30, 32, 34
-    GT.WS[ws].drawArgument2 = 30 + (i*2) - 1; -- 31, 33, 35
+    GT.WS[ws].drawArgument1 = 34 + (i*2) - 2; -- 34, 36, 38 (Avoids DCS Bort Number Args 31-32)
+    GT.WS[ws].drawArgument2 = 34 + (i*2) - 1; -- 35, 37, 39
     if i == 1 then
         GT.WS[ws].reference_angle_Y = math.rad(0);
         GT.WS[ws].angles = { {math.rad(5), math.rad(-140), math.rad(-5), math.rad(60)} };
@@ -483,8 +483,8 @@ for i = 1, 3 do
     set_recursive_metatable(GT.WS[ws], GT_t.WS_t.UK_6in_BL_MkXXII_Twin);
     GT.WS[ws].center = 'CENTER_SEC_P' .. i;
     GT.WS[ws].area = 'SEC_P' .. i;
-    GT.WS[ws].drawArgument1 = 36 + (i*2) - 2; -- 36, 38, 40
-    GT.WS[ws].drawArgument2 = 36 + (i*2) - 1; -- 37, 39, 41
+    GT.WS[ws].drawArgument1 = 40 + (i*2) - 2; -- 40, 42, 44
+    GT.WS[ws].drawArgument2 = 40 + (i*2) - 1; -- 41, 43, 45
     if i == 1 then
         GT.WS[ws].reference_angle_Y = math.rad(0);
         GT.WS[ws].angles = { {math.rad(140), math.rad(-5), math.rad(-5), math.rad(60)} };
@@ -721,13 +721,13 @@ GT.encyclopediaAnimation = {
         [3] =  0.00, [4] = 0.35, -- Turret B trained forward, elevated 14 deg
         [5] =  0.25, [6] = 0.15, -- Turret X trained 45 deg Port, elevated 6 deg
 
-        -- Secondary Battery 6-inch Twin Turrets (Broadside combat broadspread)
-        [30] = -0.20, [31] = 0.15, -- S1 trained starboard, elevated
-        [32] = -0.35, [33] = 0.15, -- S2 trained starboard, elevated
-        [34] = -0.50, [35] = 0.15, -- S3 trained starboard, elevated
-        [36] =  0.20, [37] = 0.15, -- P1 trained port, elevated
-        [38] =  0.35, [39] = 0.15, -- P2 trained port, elevated
-        [40] =  0.50, [41] = 0.15, -- P3 trained port, elevated
+        -- Secondary Battery 6-inch Twin Turrets (Broadside combat broadspread; Args 34-45 avoid DCS Bort Args 31-32)
+        [34] = -0.20, [35] = 0.15, -- S1 trained starboard, elevated
+        [36] = -0.35, [37] = 0.15, -- S2 trained starboard, elevated
+        [38] = -0.50, [39] = 0.15, -- S3 trained starboard, elevated
+        [40] =  0.20, [41] = 0.15, -- P1 trained port, elevated
+        [42] =  0.35, [43] = 0.15, -- P2 trained port, elevated
+        [44] =  0.50, [45] = 0.15, -- P3 trained port, elevated
 
         -- Type 281 Air Search Radars & Fire Control Directors
         [11] =  0.25, -- Foretop Radar 1

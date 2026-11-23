@@ -1,2 +1,2 @@
 presetId = "Nimitz"
-shipWakeSize = {220, 20}
+shipWakeSize = {0, 36.0}

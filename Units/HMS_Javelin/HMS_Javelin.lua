@@ -195,8 +195,8 @@ GT.WS[ws_A].reference_angle_Y = math.rad(0)
 GT.WS[ws_A].LN = { [1] = {} }
 set_recursive_metatable(GT.WS[ws_A].LN[1], GT_t.WS_t.UK_120mm_QF_MkXII_Twin.LN[1])
 GT.WS[ws_A].LN[1].BR = {
-    {connector_name = "POINT_GUN_01_1"},
-    {connector_name = "POINT_GUN_01_2"},
+    {connector_name = "POINT_GUN_01_1", recoilArgument = 41, recoilTime = 0.4},
+    {connector_name = "POINT_GUN_01_2", recoilArgument = 42, recoilTime = 0.4},
 }
 GT.WS[ws_A].LN[1].depends_on_unit = main_trackers
 
@@ -215,8 +215,8 @@ GT.WS[ws_B].reference_angle_Y = math.rad(0)
 GT.WS[ws_B].LN = { [1] = {} }
 set_recursive_metatable(GT.WS[ws_B].LN[1], GT_t.WS_t.UK_120mm_QF_MkXII_Twin.LN[1])
 GT.WS[ws_B].LN[1].BR = {
-    {connector_name = "POINT_GUN_02_1"},
-    {connector_name = "POINT_GUN_02_2"},
+    {connector_name = "POINT_GUN_02_1", recoilArgument = 43, recoilTime = 0.4},
+    {connector_name = "POINT_GUN_02_2", recoilArgument = 44, recoilTime = 0.4},
 }
 GT.WS[ws_B].LN[1].depends_on_unit = main_trackers
 
@@ -235,8 +235,8 @@ GT.WS[ws_X].reference_angle_Y = math.rad(180) -- Bow-Relative Zero standard: cru
 GT.WS[ws_X].LN = { [1] = {} }
 set_recursive_metatable(GT.WS[ws_X].LN[1], GT_t.WS_t.UK_120mm_QF_MkXII_Twin.LN[1])
 GT.WS[ws_X].LN[1].BR = {
-    {connector_name = "POINT_GUN_03_1"},
-    {connector_name = "POINT_GUN_03_2"},
+    {connector_name = "POINT_GUN_03_1", recoilArgument = 45, recoilTime = 0.4},
+    {connector_name = "POINT_GUN_03_2", recoilArgument = 46, recoilTime = 0.4},
 }
 GT.WS[ws_X].LN[1].depends_on_unit = main_trackers
 

@@ -371,8 +371,8 @@ GT.WS[ws].LN = { [1] = {} };
 set_recursive_metatable(GT.WS[ws].LN[1], GT_t.WS_t.UK_114mm_QF_MkIII_Twin.LN[1]);
 GT.WS[ws].LN[1].depends_on_unit = trackers_hacs_stbd;
 GT.WS[ws].LN[1].BR = {
-    {connector_name = "POINT_GUN_01_1"},
-    {connector_name = "POINT_GUN_01_2"},
+    {connector_name = "POINT_GUN_01_1", recoilArgument = 50, recoilTime = 0.4},
+    {connector_name = "POINT_GUN_01_2", recoilArgument = 51, recoilTime = 0.4},
 };
 
 -- WS 11: Gun 02 (Starboard Fwd 2 - Args 33, 34)
@@ -391,8 +391,8 @@ GT.WS[ws].LN = { [1] = {} };
 set_recursive_metatable(GT.WS[ws].LN[1], GT_t.WS_t.UK_114mm_QF_MkIII_Twin.LN[1]);
 GT.WS[ws].LN[1].depends_on_unit = trackers_hacs_stbd;
 GT.WS[ws].LN[1].BR = {
-    {connector_name = "POINT_GUN_02_1"},
-    {connector_name = "POINT_GUN_02_2"},
+    {connector_name = "POINT_GUN_02_1", recoilArgument = 52, recoilTime = 0.4},
+    {connector_name = "POINT_GUN_02_2", recoilArgument = 53, recoilTime = 0.4},
 };
 
 -- WS 12: Gun 03 (Port Fwd 1 - Args 35, 36)
@@ -411,8 +411,8 @@ GT.WS[ws].LN = { [1] = {} };
 set_recursive_metatable(GT.WS[ws].LN[1], GT_t.WS_t.UK_114mm_QF_MkIII_Twin.LN[1]);
 GT.WS[ws].LN[1].depends_on_unit = trackers_hacs_port;
 GT.WS[ws].LN[1].BR = {
-    {connector_name = "POINT_GUN_03_1"},
-    {connector_name = "POINT_GUN_03_2"},
+    {connector_name = "POINT_GUN_03_1", recoilArgument = 54, recoilTime = 0.4},
+    {connector_name = "POINT_GUN_03_2", recoilArgument = 55, recoilTime = 0.4},
 };
 
 -- WS 13: Gun 04 (Port Fwd 2 - Args 37, 38)
@@ -431,8 +431,8 @@ GT.WS[ws].LN = { [1] = {} };
 set_recursive_metatable(GT.WS[ws].LN[1], GT_t.WS_t.UK_114mm_QF_MkIII_Twin.LN[1]);
 GT.WS[ws].LN[1].depends_on_unit = trackers_hacs_port;
 GT.WS[ws].LN[1].BR = {
-    {connector_name = "POINT_GUN_04_1"},
-    {connector_name = "POINT_GUN_04_2"},
+    {connector_name = "POINT_GUN_04_1", recoilArgument = 56, recoilTime = 0.4},
+    {connector_name = "POINT_GUN_04_2", recoilArgument = 57, recoilTime = 0.4},
 };
 
 -- WS 14: Gun 05 (Port Aft 1 - Args 39, 40)
@@ -451,8 +451,8 @@ GT.WS[ws].LN = { [1] = {} };
 set_recursive_metatable(GT.WS[ws].LN[1], GT_t.WS_t.UK_114mm_QF_MkIII_Twin.LN[1]);
 GT.WS[ws].LN[1].depends_on_unit = trackers_hacs_port;
 GT.WS[ws].LN[1].BR = {
-    {connector_name = "POINT_GUN_05_1"},
-    {connector_name = "POINT_GUN_05_2"},
+    {connector_name = "POINT_GUN_05_1", recoilArgument = 58, recoilTime = 0.4},
+    {connector_name = "POINT_GUN_05_2", recoilArgument = 59, recoilTime = 0.4},
 };
 
 -- WS 15: Gun 06 (Port Aft 2 - Args 41, 42)
@@ -471,8 +471,8 @@ GT.WS[ws].LN = { [1] = {} };
 set_recursive_metatable(GT.WS[ws].LN[1], GT_t.WS_t.UK_114mm_QF_MkIII_Twin.LN[1]);
 GT.WS[ws].LN[1].depends_on_unit = trackers_hacs_port;
 GT.WS[ws].LN[1].BR = {
-    {connector_name = "POINT_GUN_06_1"},
-    {connector_name = "POINT_GUN_06_2"},
+    {connector_name = "POINT_GUN_06_1", recoilArgument = 60, recoilTime = 0.4},
+    {connector_name = "POINT_GUN_06_2", recoilArgument = 61, recoilTime = 0.4},
 };
 
 -- WS 16: Gun 07 (Starboard Aft 1 - Args 43, 44)
@@ -491,8 +491,8 @@ GT.WS[ws].LN = { [1] = {} };
 set_recursive_metatable(GT.WS[ws].LN[1], GT_t.WS_t.UK_114mm_QF_MkIII_Twin.LN[1]);
 GT.WS[ws].LN[1].depends_on_unit = trackers_hacs_aft;
 GT.WS[ws].LN[1].BR = {
-    {connector_name = "POINT_GUN_07_1"},
-    {connector_name = "POINT_GUN_07_2"},
+    {connector_name = "POINT_GUN_07_1", recoilArgument = 62, recoilTime = 0.4},
+    {connector_name = "POINT_GUN_07_2", recoilArgument = 63, recoilTime = 0.4},
 };
 
 -- WS 17: Gun 08 (Starboard Aft 2 - Args 45, 46)
@@ -511,8 +511,8 @@ GT.WS[ws].LN = { [1] = {} };
 set_recursive_metatable(GT.WS[ws].LN[1], GT_t.WS_t.UK_114mm_QF_MkIII_Twin.LN[1]);
 GT.WS[ws].LN[1].depends_on_unit = trackers_hacs_aft;
 GT.WS[ws].LN[1].BR = {
-    {connector_name = "POINT_GUN_08_1"},
-    {connector_name = "POINT_GUN_08_2"},
+    {connector_name = "POINT_GUN_08_1", recoilArgument = 64, recoilTime = 0.4},
+    {connector_name = "POINT_GUN_08_2", recoilArgument = 65, recoilTime = 0.4},
 };
 
 -- ====================================================================================

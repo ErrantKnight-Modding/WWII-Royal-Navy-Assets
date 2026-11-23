@@ -375,8 +375,8 @@ GT.WS[ws].LN = { [1] = {} };
 set_recursive_metatable(GT.WS[ws].LN[1], GT_t.WS_t.UK_133mm_QF_MkI_Twin.LN[1]);
 GT.WS[ws].LN[1].depends_on_unit = fwd_trackers;
 GT.WS[ws].LN[1].BR = {
-    {connector_name = "POINT_GUN_01_1"},
-    {connector_name = "POINT_GUN_01_2"},
+    {connector_name = "POINT_GUN_01_1", recoilArgument = 50, recoilTime = 0.5},
+    {connector_name = "POINT_GUN_01_2", recoilArgument = 51, recoilTime = 0.5},
 };
 
 -- Turret B (Forecastle Superfiring, Args 3 & 4)
@@ -397,8 +397,8 @@ GT.WS[ws].LN = { [1] = {} };
 set_recursive_metatable(GT.WS[ws].LN[1], GT_t.WS_t.UK_133mm_QF_MkI_Twin.LN[1]);
 GT.WS[ws].LN[1].depends_on_unit = fwd_trackers;
 GT.WS[ws].LN[1].BR = {
-    {connector_name = "POINT_GUN_02_1"},
-    {connector_name = "POINT_GUN_02_2"},
+    {connector_name = "POINT_GUN_02_1", recoilArgument = 52, recoilTime = 0.5},
+    {connector_name = "POINT_GUN_02_2", recoilArgument = 53, recoilTime = 0.5},
 };
 
 -- Turret Q (Forward Deckhouse Superfiring, Args 5 & 6)
@@ -419,8 +419,8 @@ GT.WS[ws].LN = { [1] = {} };
 set_recursive_metatable(GT.WS[ws].LN[1], GT_t.WS_t.UK_133mm_QF_MkI_Twin.LN[1]);
 GT.WS[ws].LN[1].depends_on_unit = fwd_trackers;
 GT.WS[ws].LN[1].BR = {
-    {connector_name = "POINT_GUN_03_1"},
-    {connector_name = "POINT_GUN_03_2"},
+    {connector_name = "POINT_GUN_03_1", recoilArgument = 54, recoilTime = 0.5},
+    {connector_name = "POINT_GUN_03_2", recoilArgument = 55, recoilTime = 0.5},
 };
 
 -- Turret X (Aft Deckhouse Superfiring, Args 7 & 10)
@@ -440,8 +440,8 @@ GT.WS[ws].LN = { [1] = {} };
 set_recursive_metatable(GT.WS[ws].LN[1], GT_t.WS_t.UK_133mm_QF_MkI_Twin.LN[1]);
 GT.WS[ws].LN[1].depends_on_unit = aft_trackers;
 GT.WS[ws].LN[1].BR = {
-    {connector_name = "POINT_GUN_04_1"},
-    {connector_name = "POINT_GUN_04_2"},
+    {connector_name = "POINT_GUN_04_1", recoilArgument = 56, recoilTime = 0.5},
+    {connector_name = "POINT_GUN_04_2", recoilArgument = 57, recoilTime = 0.5},
 };
 
 -- Turret Y (Quarterdeck Lower, Args 15 & 16)
@@ -461,8 +461,8 @@ GT.WS[ws].LN = { [1] = {} };
 set_recursive_metatable(GT.WS[ws].LN[1], GT_t.WS_t.UK_133mm_QF_MkI_Twin.LN[1]);
 GT.WS[ws].LN[1].depends_on_unit = aft_trackers;
 GT.WS[ws].LN[1].BR = {
-    {connector_name = "POINT_GUN_05_1"},
-    {connector_name = "POINT_GUN_05_2"},
+    {connector_name = "POINT_GUN_05_1", recoilArgument = 58, recoilTime = 0.5},
+    {connector_name = "POINT_GUN_05_2", recoilArgument = 59, recoilTime = 0.5},
 };
 
 --------------------------------------------------------------------------------------

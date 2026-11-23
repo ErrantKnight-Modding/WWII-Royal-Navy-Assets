@@ -89,12 +89,10 @@ GT.RunWays.RunwaysNumber = #GT.RunWays
 -- ############################################################################
 
 GT.ArrestingGears = {
-    { Left = { pos = {-82.0, cable_level, -11.5} }, Right = { pos = {-82.0, cable_level, 11.5} } }, -- Wire 1
-    { Left = { pos = {-74.0, cable_level, -11.5} }, Right = { pos = {-74.0, cable_level, 11.5} } }, -- Wire 2
-    { Left = { pos = {-66.0, cable_level, -11.5} }, Right = { pos = {-66.0, cable_level, 11.5} } }, -- Wire 3
-    { Left = { pos = {-58.0, cable_level, -11.5} }, Right = { pos = {-58.0, cable_level, 11.5} } }, -- Wire 4
-    { Left = { pos = {-50.0, cable_level, -11.5} }, Right = { pos = {-50.0, cable_level, 11.5} } }, -- Wire 5
-    { Left = { pos = {-42.0, cable_level, -11.5} }, Right = { pos = {-42.0, cable_level, 11.5} } }, -- Wire 6
+    { Left = { pos = {-75.0, cable_level, -11.13} }, Right = { pos = {-75.0, cable_level, 11.13} } }, -- Wire 1
+    { Left = { pos = {-67.0, cable_level, -11.13} }, Right = { pos = {-67.0, cable_level, 11.13} } }, -- Wire 2
+    { Left = { pos = {-59.0, cable_level, -11.13} }, Right = { pos = {-59.0, cable_level, 11.13} } }, -- Wire 3
+    { Left = { pos = {-51.0, cable_level, -11.13} }, Right = { pos = {-51.0, cable_level, 11.13} } }, -- Wire 4
 }
 
 GT.ArrestingGears.ArrestingGearsNumber = #GT.ArrestingGears
