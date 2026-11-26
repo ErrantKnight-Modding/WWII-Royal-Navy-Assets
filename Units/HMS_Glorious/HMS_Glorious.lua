@@ -80,8 +80,8 @@ GT.ICLS_Glideslope_position = {-107.0, 17.75, -12.0,   3.0}; -- {x, y, z, glides
 -- Landing Signal Officer's View (LALT + F9) - Port aft catwalk
 GT.LSOView                  = { cockpit = "empty", position = {-95.0, 19.25, -12.5, 175.0, 3.0} };
 
-GT.airWeaponDist            = 15000;
-GT.airFindDist              = 30000;
+GT.airWeaponDist            = 9500;
+GT.airFindDist              = 35000;
 
 GT.sensor = {
     max_range_finding_target = 35000,
@@ -447,43 +447,99 @@ for i = 0, 15 do
     GT.WS[ws].moveable = true;
     GT.WS[ws].pos = {0.0, 0.0, 0.0};
     
-    GT.WS[ws].LN = { [1] = {} };
+    GT.WS[ws].LN = { [1] = {}, [2] = {} };
     set_recursive_metatable(GT.WS[ws].LN[1], GT_t.WS_t.UK_120mm_QF_MkVIII_Single.LN[1]);
+    set_recursive_metatable(GT.WS[ws].LN[2], GT_t.WS_t.UK_120mm_QF_MkVIII_Single.LN[2]);
     
     if is_stbd then
         if is_fwd then
             -- Starboard Forward Mounts (00, 02, 04, 06): Stowed forward (04 tucked at -8 deg along hull)
             GT.WS[ws].reference_angle_Y = (i == 4) and math.rad(-8) or math.rad(0);
-            GT.WS[ws].angles = {
-                {math.rad(10), math.rad(-170), math.rad(-5), math.rad(85)}
-            };
+            if i == 0 then
+                -- Open upper foredeck (clear sky overhead)
+                GT.WS[ws].angles = {
+                    {math.rad(10),  math.rad(-15),  math.rad(5),  math.rad(85)},
+                    {math.rad(-15), math.rad(-150), math.rad(-5), math.rad(85)},
+                };
+            else
+                -- Forward broadside gallery under flight-deck overhang (02, 04, 06)
+                GT.WS[ws].angles = {
+                    {math.rad(-10),  math.rad(-25),  math.rad(-5), math.rad(10)},
+                    {math.rad(-25),  math.rad(-65),  math.rad(-5), math.rad(35)},
+                    {math.rad(-65),  math.rad(-110), math.rad(-5), math.rad(60)},
+                    {math.rad(-110), math.rad(-155), math.rad(-5), math.rad(35)},
+                    {math.rad(-155), math.rad(-165), math.rad(-5), math.rad(10)},
+                };
+            end
             GT.WS[ws].LN[1].depends_on_unit = trackers_stbd_fwd;
+            GT.WS[ws].LN[2].depends_on_unit = trackers_stbd_fwd;
         else
             -- Starboard Aft Mounts (08, 10, 12, 14): Stowed aft (-180 deg, 14 tucked at -172 deg along stern)
             GT.WS[ws].reference_angle_Y = (i == 14) and math.rad(-172) or math.rad(-180);
-            GT.WS[ws].angles = {
-                {math.rad(10), math.rad(-180), math.rad(-5), math.rad(85)}
-            };
+            if i == 14 then
+                -- Stern quarterdeck under flight-deck round-down (overhead hits at 40 deg)
+                GT.WS[ws].angles = {
+                    {math.rad(-40),  math.rad(-60),  math.rad(-5), math.rad(10)},
+                    {math.rad(-60),  math.rad(-155), math.rad(-5), math.rad(35)},
+                    {math.rad(-155), math.rad(-180), math.rad(-5), math.rad(15)},
+                };
+            else
+                -- Aft broadside gallery under flight-deck overhang (08, 10, 12; overhead hits at 60 deg)
+                GT.WS[ws].angles = {
+                    {math.rad(-20),  math.rad(-30),  math.rad(-5), math.rad(10)},
+                    {math.rad(-30),  math.rad(-150), math.rad(-5), math.rad(50)},
+                    {math.rad(-150), math.rad(-165), math.rad(-5), math.rad(10)},
+                };
+            end
             GT.WS[ws].LN[1].depends_on_unit = trackers_stbd_aft;
+            GT.WS[ws].LN[2].depends_on_unit = trackers_stbd_aft;
         end
     else
         if is_fwd then
             -- Port Forward Mounts (01, 03, 05, 07): Stowed forward (05 tucked at +8 deg along hull)
             GT.WS[ws].reference_angle_Y = (i == 5) and math.rad(8) or math.rad(0);
-            GT.WS[ws].angles = {
-                {math.rad(170), math.rad(-10), math.rad(-5), math.rad(85)}
-            };
+            if i == 1 then
+                -- Open upper foredeck (clear sky overhead)
+                GT.WS[ws].angles = {
+                    {math.rad(150), math.rad(15),  math.rad(-5), math.rad(85)},
+                    {math.rad(15),  math.rad(-10), math.rad(5),  math.rad(85)},
+                };
+            else
+                -- Forward broadside gallery under flight-deck overhang (03, 05, 07)
+                GT.WS[ws].angles = {
+                    {math.rad(165), math.rad(155), math.rad(-5), math.rad(10)},
+                    {math.rad(155), math.rad(110), math.rad(-5), math.rad(35)},
+                    {math.rad(110), math.rad(65),  math.rad(-5), math.rad(60)},
+                    {math.rad(65),  math.rad(25),  math.rad(-5), math.rad(35)},
+                    {math.rad(25),  math.rad(10),  math.rad(-5), math.rad(10)},
+                };
+            end
             GT.WS[ws].LN[1].depends_on_unit = trackers_port_fwd;
+            GT.WS[ws].LN[2].depends_on_unit = trackers_port_fwd;
         else
             -- Port Aft Mounts (09, 11, 13, 15): Stowed aft (+180 deg, 15 tucked at +172 deg along stern)
             GT.WS[ws].reference_angle_Y = (i == 15) and math.rad(172) or math.rad(180);
-            GT.WS[ws].angles = {
-                {math.rad(180), math.rad(-10), math.rad(-5), math.rad(85)}
-            };
+            if i == 15 then
+                -- Stern quarterdeck under flight-deck round-down (overhead hits at 40 deg)
+                GT.WS[ws].angles = {
+                    {math.rad(180), math.rad(155), math.rad(-5), math.rad(15)},
+                    {math.rad(155), math.rad(60),  math.rad(-5), math.rad(35)},
+                    {math.rad(60),  math.rad(40),  math.rad(-5), math.rad(10)},
+                };
+            else
+                -- Aft broadside gallery under flight-deck overhang (09, 11, 13; overhead hits at 60 deg)
+                GT.WS[ws].angles = {
+                    {math.rad(165), math.rad(150), math.rad(-5), math.rad(10)},
+                    {math.rad(150), math.rad(30),  math.rad(-5), math.rad(50)},
+                    {math.rad(30),  math.rad(20),  math.rad(-5), math.rad(10)},
+                };
+            end
             GT.WS[ws].LN[1].depends_on_unit = trackers_port_aft;
+            GT.WS[ws].LN[2].depends_on_unit = trackers_port_aft;
         end
     end
     GT.WS[ws].LN[1].BR = { {connector_name = "POINT_GUN_" .. idx_str} };
+    GT.WS[ws].LN[2].BR = { {connector_name = "POINT_GUN_" .. idx_str} };
 end
 
 --------------------------------------------------------------------------------------
@@ -499,8 +555,9 @@ GT.WS[ws].area = "Glorious_Deck.Fore";
 GT.WS[ws].drawArgument1 = 71;
 GT.WS[ws].drawArgument2 = 72;
 GT.WS[ws].reference_angle_Y = math.rad(45);
+GT.WS[ws].angles_mech = { {math.rad(165), math.rad(-45), math.rad(5), math.rad(80)} };
 GT.WS[ws].angles = {
-    {math.rad(170), math.rad(-45), math.rad(-10), math.rad(80)}
+    {math.rad(165), math.rad(-45), math.rad(5), math.rad(80)}
 };
 GT.WS[ws].LN = { [1] = {} };
 set_recursive_metatable(GT.WS[ws].LN[1], GT_t.WS_t.UK_40mm_PomPom_Octuple.LN[1]);
@@ -525,8 +582,8 @@ GT.WS[ws].drawArgument1 = 73;
 GT.WS[ws].drawArgument2 = 74;
 GT.WS[ws].reference_angle_Y = math.rad(-135);
 GT.WS[ws].angles = {
-    {math.rad(-45), math.rad(-180), math.rad(-10), math.rad(80)},
-    {math.rad(180), math.rad(135), math.rad(-10), math.rad(80)}
+    {math.rad(-55), math.rad(-180), math.rad(0), math.rad(80)},
+    {math.rad(180), math.rad(135),  math.rad(0), math.rad(80)}
 };
 GT.WS[ws].LN = { [1] = {} };
 set_recursive_metatable(GT.WS[ws].LN[1], GT_t.WS_t.UK_40mm_PomPom_Octuple.LN[1]);
@@ -550,8 +607,9 @@ GT.WS[ws].area = "Glorious_Deck.Fore";
 GT.WS[ws].drawArgument1 = 75;
 GT.WS[ws].drawArgument2 = 76;
 GT.WS[ws].reference_angle_Y = math.rad(-45);
+GT.WS[ws].angles_mech = { {math.rad(45), math.rad(-165), math.rad(5), math.rad(80)} };
 GT.WS[ws].angles = {
-    {math.rad(45), math.rad(-170), math.rad(-10), math.rad(80)}
+    {math.rad(45), math.rad(-165), math.rad(5), math.rad(80)}
 };
 GT.WS[ws].LN = { [1] = {} };
 set_recursive_metatable(GT.WS[ws].LN[1], GT_t.WS_t.UK_40mm_PomPom_Octuple.LN[1]);
@@ -579,8 +637,8 @@ GT.WS[ws].drawArgument1 = 77;
 GT.WS[ws].drawArgument2 = 78;
 GT.WS[ws].reference_angle_Y = math.rad(135);
 GT.WS[ws].angles = {
-    {math.rad(180), math.rad(30), math.rad(-10), math.rad(70)},
-    {math.rad(-150), math.rad(-180), math.rad(-10), math.rad(70)}
+    {math.rad(180),  math.rad(30),   math.rad(3), math.rad(70)},
+    {math.rad(-170), math.rad(-180), math.rad(5), math.rad(70)}
 };
 GT.WS[ws].LN = { [1] = {} };
 set_recursive_metatable(GT.WS[ws].LN[1], GT_t.WS_t.UK_50cal_Vickers_Quad.LN[1]);
@@ -604,6 +662,11 @@ GT.Countries = {"UK"};
 GT.tags = {"Carrier", "Aircraft Carrier"};
 GT.Singleton = "yes";
 GT.mapclasskey = "P0091000065"; -- Aircraft Carrier NATO map icon
+GT.Sensors = {
+    OPTIC = {"long-range naval optics", "long-range air defence optics"},
+    RADAR = {"carrier search radar"}, -- Placeholder for Type 281 Air Warning Radar (HMS Furious 1942-44 refit)
+};
+
 GT.DetectionRange = GT.airFindDist;
 GT.ThreatRange = GT.airWeaponDist;
 GT.attribute = {

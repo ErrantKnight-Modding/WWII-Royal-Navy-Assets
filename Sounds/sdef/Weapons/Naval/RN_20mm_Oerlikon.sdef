@@ -1,0 +1,11 @@
+wave = {
+    "Effects/Weapons/Automatic/M242Single_1",
+    "Effects/Weapons/Automatic/M242Single_2",
+    "Effects/Weapons/Automatic/M242Single_3",
+}
+inner_radius = 70
+outer_radius = 2500
+detached = true
+pitch = 1.12
+pitch_random = 0.05
+gain = 1.15

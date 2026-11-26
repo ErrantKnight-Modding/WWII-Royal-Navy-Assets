@@ -66,9 +66,9 @@ GT.animation_arguments = {
 GT.radar1_period = 10.0 -- Type 281 metric air search mattress radar (~6 RPM)
 
 GT.airWeaponDist = 3500
-GT.airFindDist = 15000
+GT.airFindDist = 25000
 
-GT.DetectionRange = GT.airFindDist -- Yellow sensor detection circle in Mission Editor (15,000 m)
+GT.DetectionRange = GT.airFindDist -- Yellow sensor detection circle in Mission Editor (25,000 m)
 GT.ThreatRange = GT.airWeaponDist   -- Red air threat engagement circle in Mission Editor (3,500 m)
 GT.Singleton = "no"
 
@@ -103,7 +103,7 @@ GT.tags = {
 GT.Countries = {"UK"}
 
 GT.Sensors = {
-    OPTIC = {"long-range naval optics"},
+    OPTIC = {"long-range naval optics", "long-range air defence optics"},
     RADAR = {"carrier search radar"},
 }
 
@@ -188,8 +188,11 @@ GT.WS[ws_A].center = "CENTER_GUN_A"
 GT.WS[ws_A].drawArgument1 = 1
 GT.WS[ws_A].drawArgument2 = 2
 GT.WS[ws_A].area = "COLLISION_SHELL_TURRET_A"
+GT.WS[ws_A].angles_mech = { {math.rad(130), math.rad(-130), math.rad(-5), math.rad(40)} }
 GT.WS[ws_A].angles = {
-    {math.rad(150), math.rad(-150), math.rad(-10), math.rad(40)}
+    {math.rad(130), math.rad(20),   math.rad(-5), math.rad(40)},
+    {math.rad(20),  math.rad(-20),  math.rad(0),  math.rad(40)},
+    {math.rad(-20), math.rad(-130), math.rad(-5), math.rad(40)},
 }
 GT.WS[ws_A].reference_angle_Y = math.rad(0)
 GT.WS[ws_A].LN = { [1] = {} }
@@ -208,8 +211,11 @@ GT.WS[ws_B].center = "CENTER_GUN_B"
 GT.WS[ws_B].drawArgument1 = 3
 GT.WS[ws_B].drawArgument2 = 4
 GT.WS[ws_B].area = "COLLISION_SHELL_TURRET_B"
+GT.WS[ws_B].angles_mech = { {math.rad(150), math.rad(-150), math.rad(-5), math.rad(40)} }
 GT.WS[ws_B].angles = {
-    {math.rad(150), math.rad(-150), math.rad(-10), math.rad(40)}
+    {math.rad(150), math.rad(35),   math.rad(-5), math.rad(40)},
+    {math.rad(35),  math.rad(-35),  math.rad(0),  math.rad(40)},
+    {math.rad(-35), math.rad(-150), math.rad(-5), math.rad(40)},
 }
 GT.WS[ws_B].reference_angle_Y = math.rad(0)
 GT.WS[ws_B].LN = { [1] = {} }
@@ -228,8 +234,10 @@ GT.WS[ws_X].center = "CENTER_GUN_X"
 GT.WS[ws_X].drawArgument1 = 5
 GT.WS[ws_X].drawArgument2 = 6
 GT.WS[ws_X].area = "COLLISION_SHELL_TURRET_X"
+GT.WS[ws_X].angles_mech = { {math.rad(-30), math.rad(30), math.rad(-5), math.rad(40)} }
 GT.WS[ws_X].angles = {
-    {math.rad(150), math.rad(-150), math.rad(-10), math.rad(40)}
+    {math.rad(180), math.rad(30),   math.rad(-5), math.rad(40)},
+    {math.rad(-30), math.rad(-180), math.rad(-5), math.rad(40)},
 }
 GT.WS[ws_X].reference_angle_Y = math.rad(180) -- Bow-Relative Zero standard: cruising heading faces aft
 GT.WS[ws_X].LN = { [1] = {} }
@@ -248,8 +256,10 @@ GT.WS[ws_pompom].center = "CENTER_POMPOM"
 GT.WS[ws_pompom].drawArgument1 = 25
 GT.WS[ws_pompom].drawArgument2 = 26
 GT.WS[ws_pompom].area = "COLLISION_SHELL_MIDSHIPS"
+GT.WS[ws_pompom].angles_mech = { {math.rad(-25), math.rad(25), math.rad(5), math.rad(80)} }
 GT.WS[ws_pompom].angles = {
-    {math.rad(160), math.rad(-160), math.rad(-10), math.rad(80)}
+    {math.rad(180), math.rad(25),   math.rad(5), math.rad(80)},
+    {math.rad(-25), math.rad(-180), math.rad(5), math.rad(80)},
 }
 GT.WS[ws_pompom].reference_angle_Y = math.rad(180) -- Cruising heading faces aft
 GT.WS[ws_pompom].LN = { [1] = {} }
@@ -271,7 +281,7 @@ GT.WS[ws_oer_p_twin].drawArgument1 = 27
 GT.WS[ws_oer_p_twin].drawArgument2 = 28
 GT.WS[ws_oer_p_twin].area = "COLLISION_SHELL_SUPERSTRUCTURE"
 GT.WS[ws_oer_p_twin].angles = {
-    {math.rad(160), math.rad(0), math.rad(-10), math.rad(85)}
+    {math.rad(165), math.rad(10), math.rad(-5), math.rad(85)}
 }
 GT.WS[ws_oer_p_twin].reference_angle_Y = math.rad(45)
 GT.WS[ws_oer_p_twin].LN = { [1] = {} }
@@ -290,7 +300,7 @@ GT.WS[ws_oer_s_twin].drawArgument1 = 29
 GT.WS[ws_oer_s_twin].drawArgument2 = 30
 GT.WS[ws_oer_s_twin].area = "COLLISION_SHELL_SUPERSTRUCTURE"
 GT.WS[ws_oer_s_twin].angles = {
-    {math.rad(0), math.rad(-160), math.rad(-10), math.rad(85)}
+    {math.rad(-10), math.rad(-165), math.rad(-5), math.rad(85)}
 }
 GT.WS[ws_oer_s_twin].reference_angle_Y = math.rad(-45)
 GT.WS[ws_oer_s_twin].LN = { [1] = {} }
@@ -309,7 +319,7 @@ GT.WS[ws_oer_p_sgl].drawArgument1 = 31
 GT.WS[ws_oer_p_sgl].drawArgument2 = 32
 GT.WS[ws_oer_p_sgl].area = "COLLISION_SHELL_AFT"
 GT.WS[ws_oer_p_sgl].angles = {
-    {math.rad(160), math.rad(20), math.rad(-10), math.rad(85)}
+    {math.rad(160), math.rad(20), math.rad(-5), math.rad(85)}
 }
 GT.WS[ws_oer_p_sgl].reference_angle_Y = math.rad(90)
 GT.WS[ws_oer_p_sgl].LN = { [1] = {} }
@@ -325,7 +335,7 @@ GT.WS[ws_oer_s_sgl].drawArgument1 = 33
 GT.WS[ws_oer_s_sgl].drawArgument2 = 34
 GT.WS[ws_oer_s_sgl].area = "COLLISION_SHELL_AFT"
 GT.WS[ws_oer_s_sgl].angles = {
-    {math.rad(-20), math.rad(-160), math.rad(-10), math.rad(85)}
+    {math.rad(-20), math.rad(-160), math.rad(-5), math.rad(85)}
 }
 GT.WS[ws_oer_s_sgl].reference_angle_Y = math.rad(-90)
 GT.WS[ws_oer_s_sgl].LN = { [1] = {} }
@@ -348,9 +358,10 @@ for i, tm in ipairs(torp_mounts) do
     GT.WS[ws].drawArgument1 = tm.arg
     GT.WS[ws].drawArgument2 = -1
     GT.WS[ws].area = "COLLISION_SHELL_MIDSHIPS"
+    GT.WS[ws].angles_mech = { {math.rad(-60), math.rad(60), math.rad(-5), math.rad(25)} }
     GT.WS[ws].angles = {
-        { math.rad(135), math.rad(45), math.rad(-5), math.rad(25) },
-        { math.rad(-45), math.rad(-135), math.rad(-5), math.rad(25) },
+        { math.rad(125), math.rad(60), math.rad(-5), math.rad(25) },
+        { math.rad(-60), math.rad(-125), math.rad(-5), math.rad(25) },
     }
     GT.WS[ws].LN = { [1] = {} }
     set_recursive_metatable(GT.WS[ws].LN[1], GT_t.WS_t.UK_21in_Torpedo_Mount.LN[1])

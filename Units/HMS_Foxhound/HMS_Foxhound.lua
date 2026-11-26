@@ -62,11 +62,11 @@ GT.animation_arguments = {
     nav_lights = 20,
 }
 
-GT.airWeaponDist = 3500
+GT.airWeaponDist = 1500
 GT.airFindDist = 15000
 
 GT.DetectionRange = GT.airFindDist -- Yellow sensor detection circle in Mission Editor (15,000 m)
-GT.ThreatRange = GT.airWeaponDist   -- Red air threat engagement circle in Mission Editor (3,500 m)
+GT.ThreatRange = GT.airWeaponDist   -- Red air threat engagement circle in Mission Editor (1,500 m)
 GT.Singleton = "no"
 
 -- Naval Sensor Suite (Radar & Optics)
@@ -100,7 +100,7 @@ GT.tags = {
 GT.Countries = {"UK"}
 
 GT.Sensors = {
-    OPTIC = {"long-range naval optics"},
+    OPTIC = {"long-range naval optics", "long-range air defence optics"},
 }
 
 -- Funnel Smoke Exhaust Connectors (Two-digit rule)
@@ -155,8 +155,11 @@ GT.WS[ws].reference_angle_Y = math.rad(0)
 GT.WS[ws].drawArgument1 = 1
 GT.WS[ws].drawArgument2 = 2
 GT.WS[ws].area = "COLLISION_SHELL_TURRET_A"
+GT.WS[ws].angles_mech = { {math.rad(130), math.rad(-130), math.rad(-5), math.rad(40)} }
 GT.WS[ws].angles = {
-    {math.rad(150), math.rad(-150), math.rad(-10), math.rad(40)}
+    {math.rad(130), math.rad(10),   math.rad(-5), math.rad(40)},
+    {math.rad(10),  math.rad(-10),  math.rad(0),  math.rad(40)},
+    {math.rad(-10), math.rad(-130), math.rad(-5), math.rad(40)},
 }
 GT.WS[ws].LN = { [1] = {} }
 set_recursive_metatable(GT.WS[ws].LN[1], GT_t.WS_t.UK_120mm_QF_MkIX_Single.LN[1])
@@ -172,8 +175,11 @@ GT.WS[ws].reference_angle_Y = math.rad(0)
 GT.WS[ws].drawArgument1 = 3
 GT.WS[ws].drawArgument2 = 4
 GT.WS[ws].area = "COLLISION_SHELL_TURRET_B"
+GT.WS[ws].angles_mech = { {math.rad(140), math.rad(-140), math.rad(-5), math.rad(40)} }
 GT.WS[ws].angles = {
-    {math.rad(140), math.rad(-140), math.rad(-10), math.rad(40)}
+    {math.rad(140), math.rad(30),   math.rad(-5), math.rad(40)},
+    {math.rad(30),  math.rad(-30),  math.rad(0),  math.rad(40)},
+    {math.rad(-30), math.rad(-140), math.rad(-5), math.rad(40)},
 }
 GT.WS[ws].LN = { [1] = {} }
 set_recursive_metatable(GT.WS[ws].LN[1], GT_t.WS_t.UK_120mm_QF_MkIX_Single.LN[1])
@@ -189,9 +195,10 @@ GT.WS[ws].reference_angle_Y = math.rad(180) -- Cruising stowage facing aft
 GT.WS[ws].drawArgument1 = 5
 GT.WS[ws].drawArgument2 = 6
 GT.WS[ws].area = "COLLISION_SHELL_TURRET_X"
+GT.WS[ws].angles_mech = { {math.rad(-40), math.rad(40), math.rad(0), math.rad(40)} }
 GT.WS[ws].angles = {
-    {math.rad(180), math.rad(40), math.rad(-10), math.rad(40)},
-    {math.rad(-40), math.rad(-180), math.rad(-10), math.rad(40)},
+    {math.rad(180), math.rad(40),   math.rad(0), math.rad(40)},
+    {math.rad(-40), math.rad(-180), math.rad(0), math.rad(40)},
 }
 GT.WS[ws].LN = { [1] = {} }
 set_recursive_metatable(GT.WS[ws].LN[1], GT_t.WS_t.UK_120mm_QF_MkIX_Single.LN[1])
@@ -207,9 +214,10 @@ GT.WS[ws].reference_angle_Y = math.rad(180) -- Cruising stowage facing aft
 GT.WS[ws].drawArgument1 = 7
 GT.WS[ws].drawArgument2 = 10
 GT.WS[ws].area = "COLLISION_SHELL_TURRET_Y"
+GT.WS[ws].angles_mech = { {math.rad(-55), math.rad(55), math.rad(-5), math.rad(40)} }
 GT.WS[ws].angles = {
-    {math.rad(180), math.rad(30), math.rad(-10), math.rad(40)},
-    {math.rad(-30), math.rad(-180), math.rad(-10), math.rad(40)},
+    {math.rad(180), math.rad(55),   math.rad(-5), math.rad(40)},
+    {math.rad(-55), math.rad(-180), math.rad(-5), math.rad(40)},
 }
 GT.WS[ws].LN = { [1] = {} }
 set_recursive_metatable(GT.WS[ws].LN[1], GT_t.WS_t.UK_120mm_QF_MkIX_Single.LN[1])
@@ -241,7 +249,8 @@ GT.WS[ws].drawArgument1 = 21
 GT.WS[ws].drawArgument2 = 22
 GT.WS[ws].area = "COLLISION_SHELL_SUPERSTRUCTURE"
 GT.WS[ws].angles = {
-    {math.rad(10), math.rad(-170), math.rad(-10), math.rad(70)}
+    {math.rad(0),   math.rad(-30),  math.rad(30), math.rad(70)},
+    {math.rad(-30), math.rad(-165), math.rad(-5), math.rad(70)},
 }
 GT.WS[ws].LN = { [1] = {} }
 set_recursive_metatable(GT.WS[ws].LN[1], GT_t.WS_t.UK_50cal_Vickers_Quad.LN[1])
@@ -262,7 +271,8 @@ GT.WS[ws].drawArgument1 = 23
 GT.WS[ws].drawArgument2 = 24
 GT.WS[ws].area = "COLLISION_SHELL_SUPERSTRUCTURE"
 GT.WS[ws].angles = {
-    {math.rad(170), math.rad(-10), math.rad(-10), math.rad(70)}
+    {math.rad(165), math.rad(30), math.rad(-5), math.rad(70)},
+    {math.rad(30),  math.rad(0),  math.rad(30), math.rad(70)},
 }
 GT.WS[ws].LN = { [1] = {} }
 set_recursive_metatable(GT.WS[ws].LN[1], GT_t.WS_t.UK_50cal_Vickers_Quad.LN[1])
@@ -289,9 +299,10 @@ for i, tm in ipairs(torp_mounts) do
     GT.WS[ws].drawArgument2 = -1
     GT.WS[ws].area = "COLLISION_SHELL_MIDSHIPS"
     GT.WS[ws].reference_angle_Y = math.rad(180);
+    GT.WS[ws].angles_mech = { {math.rad(-60), math.rad(60), math.rad(-5), math.rad(25)} }
     GT.WS[ws].angles = {
-        { math.rad(135), math.rad(45), math.rad(-5), math.rad(25) },
-        { math.rad(-45), math.rad(-135), math.rad(-5), math.rad(25) },
+        { math.rad(120), math.rad(60), math.rad(-5), math.rad(25) },
+        { math.rad(-60), math.rad(-120), math.rad(-5), math.rad(25) },
     }
     GT.WS[ws].LN = { [1] = {} }
     set_recursive_metatable(GT.WS[ws].LN[1], GT_t.WS_t.UK_21in_Quadruple_Torp.LN[1])

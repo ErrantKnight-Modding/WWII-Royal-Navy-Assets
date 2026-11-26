@@ -62,8 +62,10 @@ GT.numParking               = 0;
 GT.Plane_Num_               = 0;
 GT.Helicopter_Num_          = 0;
 
-GT.airWeaponDist            = 18000;
+GT.airWeaponDist            = 11500;
 GT.airFindDist              = 35000;
+GT.DetectionRange           = GT.airFindDist;
+GT.ThreatRange              = GT.airWeaponDist;
 
 GT.sensor = {
     max_range_finding_target = 35000,
@@ -114,7 +116,8 @@ GT.tags = {
 GT.Countries = {"UK"};
 
 GT.Sensors = {
-    OPTIC = {"long-range naval optics"},
+    OPTIC = {"long-range naval optics", "long-range air defence optics"},
+    RADAR = {"carrier search radar"}, -- Placeholder for Type 281 Air Warning Radar
 };
 
 -- ####################################################################################
@@ -368,13 +371,22 @@ GT.WS[ws].area = "COLLISION_SHELL_TURRET_A";
 GT.WS[ws].drawArgument1 = 1;
 GT.WS[ws].drawArgument2 = 2;
 GT.WS[ws].reference_angle_Y = math.rad(0);
+GT.WS[ws].angles_mech = { {math.rad(150), math.rad(-150), math.rad(-5), math.rad(70)} };
 GT.WS[ws].angles = {
-    {math.rad(150), math.rad(-150), math.rad(-5), math.rad(70)}
+    {math.rad(150), math.rad(15),   math.rad(-5), math.rad(70)},
+    {math.rad(15),  math.rad(-15),  math.rad(0),  math.rad(70)},
+    {math.rad(-15), math.rad(-150), math.rad(-5), math.rad(70)},
 };
-GT.WS[ws].LN = { [1] = {} };
+GT.WS[ws].LN = { [1] = {}, [2] = {} };
 set_recursive_metatable(GT.WS[ws].LN[1], GT_t.WS_t.UK_133mm_QF_MkI_Twin.LN[1]);
 GT.WS[ws].LN[1].depends_on_unit = fwd_trackers;
 GT.WS[ws].LN[1].BR = {
+    {connector_name = "POINT_GUN_01_1", recoilArgument = 50, recoilTime = 0.5},
+    {connector_name = "POINT_GUN_01_2", recoilArgument = 51, recoilTime = 0.5},
+};
+set_recursive_metatable(GT.WS[ws].LN[2], GT_t.WS_t.UK_133mm_QF_MkI_Twin.LN[2]);
+GT.WS[ws].LN[2].depends_on_unit = fwd_trackers;
+GT.WS[ws].LN[2].BR = {
     {connector_name = "POINT_GUN_01_1", recoilArgument = 50, recoilTime = 0.5},
     {connector_name = "POINT_GUN_01_2", recoilArgument = 51, recoilTime = 0.5},
 };
@@ -388,15 +400,22 @@ GT.WS[ws].area = "COLLISION_SHELL_TURRET_B";
 GT.WS[ws].drawArgument1 = 3;
 GT.WS[ws].drawArgument2 = 4;
 GT.WS[ws].reference_angle_Y = math.rad(0);
+GT.WS[ws].angles_mech = { {math.rad(150), math.rad(-150), math.rad(-5), math.rad(70)} };
 GT.WS[ws].angles = {
     {math.rad(150), math.rad(30), math.rad(-5), math.rad(70)},
     {math.rad(30), math.rad(-30), math.rad(0), math.rad(70)},
     {math.rad(-30), math.rad(-150), math.rad(-5), math.rad(70)},
 };
-GT.WS[ws].LN = { [1] = {} };
+GT.WS[ws].LN = { [1] = {}, [2] = {} };
 set_recursive_metatable(GT.WS[ws].LN[1], GT_t.WS_t.UK_133mm_QF_MkI_Twin.LN[1]);
 GT.WS[ws].LN[1].depends_on_unit = fwd_trackers;
 GT.WS[ws].LN[1].BR = {
+    {connector_name = "POINT_GUN_02_1", recoilArgument = 52, recoilTime = 0.5},
+    {connector_name = "POINT_GUN_02_2", recoilArgument = 53, recoilTime = 0.5},
+};
+set_recursive_metatable(GT.WS[ws].LN[2], GT_t.WS_t.UK_133mm_QF_MkI_Twin.LN[2]);
+GT.WS[ws].LN[2].depends_on_unit = fwd_trackers;
+GT.WS[ws].LN[2].BR = {
     {connector_name = "POINT_GUN_02_1", recoilArgument = 52, recoilTime = 0.5},
     {connector_name = "POINT_GUN_02_2", recoilArgument = 53, recoilTime = 0.5},
 };
@@ -410,15 +429,22 @@ GT.WS[ws].area = "COLLISION_SHELL_TURRET_Q";
 GT.WS[ws].drawArgument1 = 5;
 GT.WS[ws].drawArgument2 = 6;
 GT.WS[ws].reference_angle_Y = math.rad(0);
+GT.WS[ws].angles_mech = { {math.rad(140), math.rad(-140), math.rad(-5), math.rad(70)} };
 GT.WS[ws].angles = {
     {math.rad(140), math.rad(30), math.rad(-5), math.rad(70)},
     {math.rad(30), math.rad(-30), math.rad(0), math.rad(70)},
     {math.rad(-30), math.rad(-140), math.rad(-5), math.rad(70)},
 };
-GT.WS[ws].LN = { [1] = {} };
+GT.WS[ws].LN = { [1] = {}, [2] = {} };
 set_recursive_metatable(GT.WS[ws].LN[1], GT_t.WS_t.UK_133mm_QF_MkI_Twin.LN[1]);
 GT.WS[ws].LN[1].depends_on_unit = fwd_trackers;
 GT.WS[ws].LN[1].BR = {
+    {connector_name = "POINT_GUN_03_1", recoilArgument = 54, recoilTime = 0.5},
+    {connector_name = "POINT_GUN_03_2", recoilArgument = 55, recoilTime = 0.5},
+};
+set_recursive_metatable(GT.WS[ws].LN[2], GT_t.WS_t.UK_133mm_QF_MkI_Twin.LN[2]);
+GT.WS[ws].LN[2].depends_on_unit = fwd_trackers;
+GT.WS[ws].LN[2].BR = {
     {connector_name = "POINT_GUN_03_1", recoilArgument = 54, recoilTime = 0.5},
     {connector_name = "POINT_GUN_03_2", recoilArgument = 55, recoilTime = 0.5},
 };
@@ -432,14 +458,21 @@ GT.WS[ws].area = "COLLISION_SHELL_TURRET_X";
 GT.WS[ws].drawArgument1 = 7;
 GT.WS[ws].drawArgument2 = 10;
 GT.WS[ws].reference_angle_Y = math.rad(180); -- Stowed facing aft
+GT.WS[ws].angles_mech = { {math.rad(-35), math.rad(35), math.rad(-5), math.rad(70)} };
 GT.WS[ws].angles = {
     {math.rad(180), math.rad(35), math.rad(-5), math.rad(70)},
     {math.rad(-35), math.rad(-180), math.rad(-5), math.rad(70)},
 };
-GT.WS[ws].LN = { [1] = {} };
+GT.WS[ws].LN = { [1] = {}, [2] = {} };
 set_recursive_metatable(GT.WS[ws].LN[1], GT_t.WS_t.UK_133mm_QF_MkI_Twin.LN[1]);
 GT.WS[ws].LN[1].depends_on_unit = aft_trackers;
 GT.WS[ws].LN[1].BR = {
+    {connector_name = "POINT_GUN_04_1", recoilArgument = 56, recoilTime = 0.5},
+    {connector_name = "POINT_GUN_04_2", recoilArgument = 57, recoilTime = 0.5},
+};
+set_recursive_metatable(GT.WS[ws].LN[2], GT_t.WS_t.UK_133mm_QF_MkI_Twin.LN[2]);
+GT.WS[ws].LN[2].depends_on_unit = aft_trackers;
+GT.WS[ws].LN[2].BR = {
     {connector_name = "POINT_GUN_04_1", recoilArgument = 56, recoilTime = 0.5},
     {connector_name = "POINT_GUN_04_2", recoilArgument = 57, recoilTime = 0.5},
 };
@@ -453,14 +486,21 @@ GT.WS[ws].area = "COLLISION_SHELL_TURRET_Y";
 GT.WS[ws].drawArgument1 = 15;
 GT.WS[ws].drawArgument2 = 16;
 GT.WS[ws].reference_angle_Y = math.rad(180); -- Stowed facing aft
+GT.WS[ws].angles_mech = { {math.rad(-45), math.rad(45), math.rad(-5), math.rad(70)} };
 GT.WS[ws].angles = {
-    {math.rad(180), math.rad(30), math.rad(-5), math.rad(70)},
-    {math.rad(-30), math.rad(-180), math.rad(-5), math.rad(70)},
+    {math.rad(180), math.rad(45),   math.rad(-5), math.rad(70)},
+    {math.rad(-45), math.rad(-180), math.rad(-5), math.rad(70)},
 };
-GT.WS[ws].LN = { [1] = {} };
+GT.WS[ws].LN = { [1] = {}, [2] = {} };
 set_recursive_metatable(GT.WS[ws].LN[1], GT_t.WS_t.UK_133mm_QF_MkI_Twin.LN[1]);
 GT.WS[ws].LN[1].depends_on_unit = aft_trackers;
 GT.WS[ws].LN[1].BR = {
+    {connector_name = "POINT_GUN_05_1", recoilArgument = 58, recoilTime = 0.5},
+    {connector_name = "POINT_GUN_05_2", recoilArgument = 59, recoilTime = 0.5},
+};
+set_recursive_metatable(GT.WS[ws].LN[2], GT_t.WS_t.UK_133mm_QF_MkI_Twin.LN[2]);
+GT.WS[ws].LN[2].depends_on_unit = aft_trackers;
+GT.WS[ws].LN[2].BR = {
     {connector_name = "POINT_GUN_05_1", recoilArgument = 58, recoilTime = 0.5},
     {connector_name = "POINT_GUN_05_2", recoilArgument = 59, recoilTime = 0.5},
 };
@@ -479,7 +519,8 @@ GT.WS[ws].drawArgument1 = 25;
 GT.WS[ws].drawArgument2 = 26;
 GT.WS[ws].reference_angle_Y = math.rad(-90);
 GT.WS[ws].angles = {
-    {math.rad(-10), math.rad(-170), math.rad(-10), math.rad(80)}
+    {math.rad(-10), math.rad(-50),  math.rad(5),  math.rad(80)},
+    {math.rad(-50), math.rad(-170), math.rad(-5), math.rad(80)},
 };
 GT.WS[ws].LN = { [1] = {} };
 set_recursive_metatable(GT.WS[ws].LN[1], GT_t.WS_t.UK_40mm_PomPom_Quad.LN[1]);
@@ -501,7 +542,8 @@ GT.WS[ws].drawArgument1 = 27;
 GT.WS[ws].drawArgument2 = 28;
 GT.WS[ws].reference_angle_Y = math.rad(90);
 GT.WS[ws].angles = {
-    {math.rad(170), math.rad(10), math.rad(-10), math.rad(80)}
+    {math.rad(170), math.rad(50), math.rad(-5), math.rad(80)},
+    {math.rad(50),  math.rad(10), math.rad(5),  math.rad(80)},
 };
 GT.WS[ws].LN = { [1] = {} };
 set_recursive_metatable(GT.WS[ws].LN[1], GT_t.WS_t.UK_40mm_PomPom_Quad.LN[1]);
@@ -518,11 +560,11 @@ GT.WS[ws].LN[1].BR = {
 --------------------------------------------------------------------------------------
 
 local oerlikon_data = {
-    { center = "CENTER_OERLIKON_01", az_arg = 31, el_arg = 32, ref_y = math.rad(-90), conn = "POINT_GUN_OERLIKON_01", area = "COLLISION_SHELL_SUPERSTRUCTURE_01", angles = { {math.rad(-10), math.rad(-170), math.rad(-10), math.rad(70)} } },
-    { center = "CENTER_OERLIKON_02", az_arg = 33, el_arg = 34, ref_y = math.rad(90),  conn = "POINT_GUN_OERLIKON_02", area = "COLLISION_SHELL_SUPERSTRUCTURE_01", angles = { {math.rad(170), math.rad(10), math.rad(-10), math.rad(70)} } },
-    { center = "CENTER_OERLIKON_03", az_arg = 35, el_arg = 36, ref_y = math.rad(90),  conn = "POINT_GUN_OERLIKON_03", area = "COLLISION_SHELL_SUPERSTRUCTURE_03", angles = { {math.rad(160), math.rad(20), math.rad(-10), math.rad(70)} } },
-    { center = "CENTER_OERLIKON_04", az_arg = 37, el_arg = 38, ref_y = math.rad(-90), conn = "POINT_GUN_OERLIKON_04", area = "COLLISION_SHELL_SUPERSTRUCTURE_03", angles = { {math.rad(-20), math.rad(-160), math.rad(-10), math.rad(70)} } },
-    { center = "CENTER_OERLIKON_05", az_arg = 39, el_arg = 40, ref_y = math.rad(180), conn = "POINT_GUN_OERLIKON_05", area = "COLLISION_SHELL_AFT",                 angles = { {math.rad(180), math.rad(30), math.rad(-10), math.rad(70)}, {math.rad(-30), math.rad(-180), math.rad(-10), math.rad(70)} } },
+    { center = "CENTER_OERLIKON_01", az_arg = 31, el_arg = 32, ref_y = math.rad(-90), conn = "POINT_GUN_OERLIKON_01", area = "COLLISION_SHELL_SUPERSTRUCTURE_01", angles = { {math.rad(-10), math.rad(-170), math.rad(0), math.rad(70)} } },
+    { center = "CENTER_OERLIKON_02", az_arg = 33, el_arg = 34, ref_y = math.rad(90),  conn = "POINT_GUN_OERLIKON_02", area = "COLLISION_SHELL_SUPERSTRUCTURE_01", angles = { {math.rad(170), math.rad(10), math.rad(0), math.rad(70)} } },
+    { center = "CENTER_OERLIKON_03", az_arg = 35, el_arg = 36, ref_y = math.rad(90),  conn = "POINT_GUN_OERLIKON_03", area = "COLLISION_SHELL_SUPERSTRUCTURE_03", angles = { {math.rad(160), math.rad(150), math.rad(15), math.rad(70)}, {math.rad(150), math.rad(30), math.rad(5), math.rad(70)}, {math.rad(30), math.rad(20), math.rad(15), math.rad(70)} } },
+    { center = "CENTER_OERLIKON_04", az_arg = 37, el_arg = 38, ref_y = math.rad(-90), conn = "POINT_GUN_OERLIKON_04", area = "COLLISION_SHELL_SUPERSTRUCTURE_03", angles = { {math.rad(-20), math.rad(-30), math.rad(15), math.rad(70)}, {math.rad(-30), math.rad(-150), math.rad(5), math.rad(70)}, {math.rad(-150), math.rad(-160), math.rad(15), math.rad(70)} } },
+    { center = "CENTER_OERLIKON_05", az_arg = 39, el_arg = 40, ref_y = math.rad(180), conn = "POINT_GUN_OERLIKON_05", area = "COLLISION_SHELL_AFT",                 angles_mech = { {math.rad(-30), math.rad(30), math.rad(0), math.rad(70)} }, angles = { {math.rad(180), math.rad(30), math.rad(0), math.rad(70)}, {math.rad(-30), math.rad(-180), math.rad(0), math.rad(70)} } },
 };
 
 for i, oer in ipairs(oerlikon_data) do
@@ -534,6 +576,7 @@ for i, oer in ipairs(oerlikon_data) do
     GT.WS[ws].drawArgument1 = oer.az_arg;
     GT.WS[ws].drawArgument2 = oer.el_arg;
     GT.WS[ws].reference_angle_Y = oer.ref_y;
+    if oer.angles_mech then GT.WS[ws].angles_mech = oer.angles_mech; end
     GT.WS[ws].angles = oer.angles;
     GT.WS[ws].LN = { [1] = {} };
     set_recursive_metatable(GT.WS[ws].LN[1], GT_t.WS_t.UK_20mm_Oerlikon_Single.LN[1]);

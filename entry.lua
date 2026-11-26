@@ -12,7 +12,7 @@ declare_plugin("WWII Royal Navy Assets",
     {
         installed         = true, 
         dirName           = current_mod_path,
-        version           = "1.1.0",
+        version           = "1.2.0",
         state             = "installed",
         developerName     = "ErrantKnight",
         info              = _("Historical WWII Royal Navy naval assets for DCS World.\n\nCredits:\nOriginal 3D naval models created and generously shared by Thomas Beerens (https://www.patreon.com/ThomasBeerens).\nDCS conversion, animations, collision shells, weapons, and systems by ErrantKnight."),

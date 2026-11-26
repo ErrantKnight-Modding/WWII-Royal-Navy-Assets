@@ -131,19 +131,38 @@ GT_t.WS_t.UK_120mm_QF_MkVIII_Single = {
     pidZ = GT_t.AAA_PIDZ,
     LN = {
         [1] = {
-            type = WS_GUN_AA_HEAVY or 11, -- Timed Fuze/Flak logic with anti-surface capability
+            type = WS_GUN_AA_HEAVY or 11, -- Timed Fuze/Flak AA defense
             distanceMin = 300,     -- Minimum fuze arming distance
-            distanceMax = 14500,   -- Max surface horizontal range at +45 deg (15,780 yd / 14,430 m)
+            distanceMax = 9500,    -- Slant AA ceiling (~31,000 ft max envelope; Campbell p. 49)
             distanceMaxAir = 9500, -- Slant AA ceiling (~31,000 ft max envelope; Campbell p. 49)
-            min_trg_alt = -1,      -- Dual-purpose: engages surface vessels at 0 m
-            max_trg_alt = 9000,
+            min_trg_alt = 100,
+            max_trg_alt = 9500,
             reactionTime = 2.0,    -- 2.0 s HACS fire-control calculation & mechanical fuze setter delay
             reflection_limit = 0.22,
             connectorFire = true,
             sensor = {},
             PL = {
                 [1] = {
-                    ammo_capacity = 200, -- 200 rounds per mount (1,200 rounds total)
+                    ammo_capacity = 140, -- AA allocation per mount (200 total per mount)
+                    shell_name = {"UK_120mm_HE_Mk8"},
+                    shot_delay = 5.0,  -- 12 rounds per minute (Campbell p. 49)
+                    reload_time = 5.0,
+                }
+            }
+        },
+        [2] = {
+            type = WS_GUN_GROUND or 6, -- Surface engagement & coastal bombardment
+            distanceMin = 300,
+            distanceMax = 14500,   -- Max surface horizontal range at +45 deg (15,780 yd / 14,430 m)
+            min_trg_alt = -1,      -- Enables surface engagement at sea level (0 m)
+            max_trg_alt = 3500,
+            reactionTime = 2.0,
+            reflection_limit = 0.22,
+            connectorFire = true,
+            sensor = {},
+            PL = {
+                [1] = {
+                    ammo_capacity = 60, -- Surface/star-shell reserve per mount (200 total per mount)
                     shell_name = {"UK_120mm_HE_Mk8"},
                     shot_delay = 5.0,  -- 12 rounds per minute (Campbell p. 49)
                     reload_time = 5.0,
@@ -152,7 +171,8 @@ GT_t.WS_t.UK_120mm_QF_MkVIII_Single = {
         }
     }
 }
-set_recursive_metatable(GT_t.WS_t.UK_120mm_QF_MkVIII_Single.LN[1].sensor, GT_t.WSN_t[0])
+set_recursive_metatable(GT_t.WS_t.UK_120mm_QF_MkVIII_Single.LN[1].sensor, GT_t.WSN_t[SN_AA_HEAVY_FLAK or 12])
+set_recursive_metatable(GT_t.WS_t.UK_120mm_QF_MkVIII_Single.LN[2].sensor, GT_t.WSN_t[SN_NAVAL_STANDARD or 0])
 
 
 
@@ -175,11 +195,11 @@ GT_t.WS_t.UK_133mm_QF_MkI_Twin = {
     pidZ = GT_t.AAA_PIDZ,
     LN = {
         [1] = {
-            type = WS_GUN_AA_HEAVY or 11, -- Timed Fuze/Flak logic with dual-purpose surface capability
+            type = WS_GUN_AA_HEAVY or 11, -- Timed Fuze/Flak AA defense
             distanceMin = 200,
-            distanceMax = 21400,   -- Max surface range at +45 deg (23,400 yd / 21,400 m)
+            distanceMax = 11500,   -- Slant AA ceiling (~36,000 ft effective envelope)
             distanceMaxAir = 11500, -- Slant AA ceiling (~36,000 ft effective envelope)
-            min_trg_alt = -1,      -- Anti-surface engagement at sea level (0 m)
+            min_trg_alt = 100,
             max_trg_alt = 12000,   -- High-altitude bomber engagement limit
             reactionTime = 1.5,    -- 1.5 s HACS/DCT fire-control calculation and mechanical fuze delay
             reflection_limit = 0.22,
@@ -187,7 +207,26 @@ GT_t.WS_t.UK_133mm_QF_MkI_Twin = {
             sensor = {},
             PL = {
                 [1] = {
-                    ammo_capacity = 300, -- 300 rounds per barrel (600 per turret; 3,000 total ship capacity)
+                    ammo_capacity = 150, -- AA allocation per barrel (300 total per barrel)
+                    shell_name = {"UK_133mm_HE_MkI"},
+                    shot_delay = 5.0,  -- 12 rounds per minute design rate (Campbell p. 44)
+                    reload_time = 5.0,
+                }
+            }
+        },
+        [2] = {
+            type = WS_GUN_GROUND or 6, -- Surface anti-ship & shore bombardment
+            distanceMin = 200,
+            distanceMax = 21400,   -- Max surface range at +45 deg (23,400 yd / 21,400 m)
+            min_trg_alt = -1,      -- Anti-surface engagement at sea level (0 m)
+            max_trg_alt = 5000,
+            reactionTime = 1.5,
+            reflection_limit = 0.22,
+            connectorFire = true,
+            sensor = {},
+            PL = {
+                [1] = {
+                    ammo_capacity = 150, -- Surface allocation per barrel (300 total per barrel)
                     shell_name = {"UK_133mm_HE_MkI", "UK_133mm_SAP_MkI"},
                     shot_delay = 5.0,  -- 12 rounds per minute design rate (Campbell p. 44)
                     reload_time = 5.0,
@@ -196,7 +235,8 @@ GT_t.WS_t.UK_133mm_QF_MkI_Twin = {
         }
     }
 }
-set_recursive_metatable(GT_t.WS_t.UK_133mm_QF_MkI_Twin.LN[1].sensor, GT_t.WSN_t[0])
+set_recursive_metatable(GT_t.WS_t.UK_133mm_QF_MkI_Twin.LN[1].sensor, GT_t.WSN_t[SN_AA_HEAVY_FLAK or 12])
+set_recursive_metatable(GT_t.WS_t.UK_133mm_QF_MkI_Twin.LN[2].sensor, GT_t.WSN_t[SN_NAVAL_STANDARD or 0])
 
 -- ============================================================================
 -- 3c. Dual-Purpose Battery: 4.5-inch (114mm) QF Mark III (Twin Mount)
@@ -217,11 +257,11 @@ GT_t.WS_t.UK_114mm_QF_MkIII_Twin = {
     pidZ = GT_t.AAA_PIDZ,
     LN = {
         [1] = {
-            type = WS_GUN_AA_HEAVY or 11, -- Timed Fuze/Flak logic with dual-purpose surface capability
+            type = WS_GUN_AA_HEAVY or 11, -- Timed Fuze/Flak AA defense
             distanceMin = 200,
-            distanceMax = 18900,   -- Max surface range at +45 deg (20,700 yd / 18,900 m)
+            distanceMax = 12500,   -- Slant AA ceiling (~41,000 ft envelope)
             distanceMaxAir = 12500, -- Slant AA ceiling (~41,000 ft envelope)
-            min_trg_alt = -1,      -- Anti-surface engagement at sea level (0 m)
+            min_trg_alt = 100,
             max_trg_alt = 13000,   -- High-altitude bomber engagement limit
             reactionTime = 1.5,    -- 1.5 s HACS fire-control calculation and mechanical fuze delay
             reflection_limit = 0.22,
@@ -229,7 +269,26 @@ GT_t.WS_t.UK_114mm_QF_MkIII_Twin = {
             sensor = {},
             PL = {
                 [1] = {
-                    ammo_capacity = 300, -- 300 rounds per barrel (600 per turret; 4,800 total ship capacity)
+                    ammo_capacity = 200, -- AA allocation per barrel (300 total per barrel)
+                    shell_name = {"UK_114mm_HE_MkI"},
+                    shot_delay = 5.0,  -- 12 rounds per minute design rate per barrel (Campbell p. 55)
+                    reload_time = 5.0,
+                }
+            }
+        },
+        [2] = {
+            type = WS_GUN_GROUND or 6, -- Surface anti-ship & shore bombardment
+            distanceMin = 200,
+            distanceMax = 18900,   -- Max surface range at +45 deg (20,700 yd / 18,900 m)
+            min_trg_alt = -1,      -- Anti-surface engagement at sea level (0 m)
+            max_trg_alt = 5000,
+            reactionTime = 1.5,
+            reflection_limit = 0.22,
+            connectorFire = true,
+            sensor = {},
+            PL = {
+                [1] = {
+                    ammo_capacity = 100, -- Surface allocation per barrel (300 total per barrel)
                     shell_name = {"UK_114mm_HE_MkI"},
                     shot_delay = 5.0,  -- 12 rounds per minute design rate per barrel (Campbell p. 55)
                     reload_time = 5.0,
@@ -238,7 +297,8 @@ GT_t.WS_t.UK_114mm_QF_MkIII_Twin = {
         }
     }
 }
-set_recursive_metatable(GT_t.WS_t.UK_114mm_QF_MkIII_Twin.LN[1].sensor, GT_t.WSN_t[0])
+set_recursive_metatable(GT_t.WS_t.UK_114mm_QF_MkIII_Twin.LN[1].sensor, GT_t.WSN_t[SN_AA_HEAVY_FLAK or 12])
+set_recursive_metatable(GT_t.WS_t.UK_114mm_QF_MkIII_Twin.LN[2].sensor, GT_t.WSN_t[SN_NAVAL_STANDARD or 0])
 
 -- ============================================================================
 -- 4. Light AA: 2-pdr (40mm) "Pom-Pom" Mark VIII (Quad & Octuple Mounts)
@@ -550,11 +610,11 @@ GT_t.WS_t.UK_102mm_QF_MkXVI_Twin = {
     pidZ = GT_t.AAA_PIDZ,
     LN = {
         [1] = {
-            type = WS_GUN_AA_HEAVY or 11, -- Timed Fuze/Flak logic with dual-purpose surface capability
+            type = WS_GUN_AA_HEAVY or 11, -- Timed Fuze/Flak AA defense
             distanceMin = 200,     -- Minimum fuze arming distance
-            distanceMax = 18150,   -- Max surface horizontal range at +45 deg (19,850 yd / 18,150 m)
+            distanceMax = 11800,   -- Slant AA ceiling (~39,000 ft max envelope; Campbell p. 56)
             distanceMaxAir = 11800, -- Slant AA ceiling (~39,000 ft max envelope; Campbell p. 56)
-            min_trg_alt = -1,      -- Dual-purpose: engages surface vessels at 0 m
+            min_trg_alt = 100,
             max_trg_alt = 12000,
             reactionTime = 1.5,    -- 1.5 s HACS fire-control calculation & mechanical fuze setter delay
             reflection_limit = 0.22,
@@ -562,7 +622,26 @@ GT_t.WS_t.UK_102mm_QF_MkXVI_Twin = {
             sensor = {},
             PL = {
                 [1] = {
-                    ammo_capacity = 250, -- 250 rounds per barrel (500 per mount; 2,000 total ship capacity)
+                    ammo_capacity = 160, -- AA allocation per barrel (250 total per barrel)
+                    shell_name = {"UK_102mm_HE_MkXVI"},
+                    shot_delay = 3.33, -- ~18 rounds per minute sustained cyclic rate (Campbell p. 56)
+                    reload_time = 3.33,
+                }
+            }
+        },
+        [2] = {
+            type = WS_GUN_GROUND or 6, -- Surface anti-ship & shore bombardment
+            distanceMin = 200,
+            distanceMax = 18150,   -- Max surface horizontal range at +45 deg (19,850 yd / 18,150 m)
+            min_trg_alt = -1,      -- Dual-purpose: engages surface vessels at 0 m
+            max_trg_alt = 5000,
+            reactionTime = 1.5,
+            reflection_limit = 0.22,
+            connectorFire = true,
+            sensor = {},
+            PL = {
+                [1] = {
+                    ammo_capacity = 90, -- Surface allocation per barrel (250 total per barrel)
                     shell_name = {"UK_102mm_HE_MkXVI", "UK_102mm_SAP_MkXVI"},
                     shot_delay = 3.33, -- ~18 rounds per minute sustained cyclic rate (Campbell p. 56)
                     reload_time = 3.33,
@@ -571,7 +650,8 @@ GT_t.WS_t.UK_102mm_QF_MkXVI_Twin = {
         }
     }
 }
-set_recursive_metatable(GT_t.WS_t.UK_102mm_QF_MkXVI_Twin.LN[1].sensor, GT_t.WSN_t[0])
+set_recursive_metatable(GT_t.WS_t.UK_102mm_QF_MkXVI_Twin.LN[1].sensor, GT_t.WSN_t[SN_AA_HEAVY_FLAK or 12])
+set_recursive_metatable(GT_t.WS_t.UK_102mm_QF_MkXVI_Twin.LN[2].sensor, GT_t.WSN_t[SN_NAVAL_STANDARD or 0])
 
 
 

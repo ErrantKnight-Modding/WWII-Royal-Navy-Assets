@@ -1,0 +1,15 @@
+wave = {
+    "Effects/Weapons/Cannon/50mmGun_1",
+    "Effects/Weapons/Cannon/50mmGun_2",
+    "Effects/Weapons/Cannon/50mmGun_3",
+    "Effects/Weapons/Cannon/50mmGun_4",
+    "Effects/Weapons/Cannon/50mmGun_5",
+    "Effects/Weapons/Cannon/50mmGun_6",
+    "Effects/Weapons/Cannon/50mmGun_7",
+}
+inner_radius = 90
+outer_radius = 3000
+detached = true
+pitch = 1.12
+pitch_random = 0.04
+gain = 1.25

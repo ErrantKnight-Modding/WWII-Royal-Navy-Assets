@@ -41,8 +41,8 @@ GT.numParking               = 0;
 GT.Plane_Num_               = 0;
 GT.Helicopter_Num_          = 0;
 
-GT.airWeaponDist            = 15000;
-GT.airFindDist              = 30000;
+GT.airWeaponDist            = 9500;
+GT.airFindDist              = 35000;
 
 GT.sensor = {
     max_range_finding_target = 40000,
@@ -374,6 +374,9 @@ GT.WS[ws].area = 'TURRET_A';
 GT.WS[ws].drawArgument1 = 1; -- Azimuth
 GT.WS[ws].drawArgument2 = 2; -- Elevation
 -- Forecastle clearance: +3 deg over bow to prevent deck blast damage
+GT.WS[ws].angles_mech = {
+    {math.rad(145), math.rad(-145), math.rad(-3), math.rad(40)},
+};
 GT.WS[ws].angles = { 
     {math.rad(145), math.rad(30), math.rad(-3), math.rad(40)},
     {math.rad(30), math.rad(-30), math.rad(3), math.rad(40)},
@@ -397,6 +400,9 @@ GT.WS[ws].area = 'TURRET_B';
 GT.WS[ws].drawArgument1 = 3; -- Azimuth
 GT.WS[ws].drawArgument2 = 4; -- Elevation
 -- Superfiring clearance: Min 0 deg elevation firing forward over Turret A roof
+GT.WS[ws].angles_mech = {
+    {math.rad(145), math.rad(-145), math.rad(-3), math.rad(40)},
+};
 GT.WS[ws].angles = { 
     {math.rad(145), math.rad(30), math.rad(-3), math.rad(40)},
     {math.rad(30), math.rad(-30), math.rad(0), math.rad(40)},
@@ -422,9 +428,12 @@ GT.WS[ws].drawArgument2 = 6; -- Elevation
 GT.WS[ws].reference_angle_Y = math.rad(0); -- Stowed facing forward
 -- Broadside arcs: 30 to 115 deg on starboard side, -30 to -115 deg on port side
 -- No forward firing arc (preventing barrel elevation lockout at rest)
+GT.WS[ws].angles_mech = {
+    {math.rad(115), math.rad(-115), math.rad(-3), math.rad(40)},
+};
 GT.WS[ws].angles = { 
-    {math.rad(135), math.rad(30), math.rad(-3), math.rad(40)},
-    {math.rad(-30), math.rad(-135), math.rad(-3), math.rad(40)},
+    {math.rad(115), math.rad(30), math.rad(-3), math.rad(40)},
+    {math.rad(-30), math.rad(-115), math.rad(-3), math.rad(40)},
 };
 GT.WS[ws].LN = { [1] = {} };
 set_recursive_metatable(GT.WS[ws].LN[1], GT_t.WS_t.UK_16in_BL_MkI_Triple.LN[1]);
@@ -455,13 +464,20 @@ for i = 1, 3 do
     GT.WS[ws].drawArgument2 = 34 + (i*2) - 1; -- 35, 37, 39
     if i == 1 then
         GT.WS[ws].reference_angle_Y = math.rad(0);
-        GT.WS[ws].angles = { {math.rad(5), math.rad(-140), math.rad(-5), math.rad(60)} };
+        GT.WS[ws].angles = {
+            {math.rad(5),   math.rad(-20),  math.rad(15), math.rad(60)},
+            {math.rad(-20), math.rad(-140), math.rad(-5), math.rad(60)},
+        };
     elseif i == 2 then
         GT.WS[ws].reference_angle_Y = math.rad(0);
-        GT.WS[ws].angles = { {math.rad(5), math.rad(-165), math.rad(-5), math.rad(60)} };
+        GT.WS[ws].angles = {
+            {math.rad(5),   math.rad(0),    math.rad(5),  math.rad(60)},
+            {math.rad(0),   math.rad(-35),  math.rad(0),  math.rad(60)},
+            {math.rad(-35), math.rad(-165), math.rad(-5), math.rad(60)},
+        };
     elseif i == 3 then
         GT.WS[ws].reference_angle_Y = math.rad(-180);
-        GT.WS[ws].angles = { {math.rad(-35), math.rad(-180), math.rad(-5), math.rad(60)} };
+        GT.WS[ws].angles = { {math.rad(-40), math.rad(-180), math.rad(-5), math.rad(60)} };
     end
     GT.WS[ws].LN = { [1] = {} };
     set_recursive_metatable(GT.WS[ws].LN[1], GT_t.WS_t.UK_6in_BL_MkXXII_Twin.LN[1]);
@@ -487,13 +503,20 @@ for i = 1, 3 do
     GT.WS[ws].drawArgument2 = 40 + (i*2) - 1; -- 41, 43, 45
     if i == 1 then
         GT.WS[ws].reference_angle_Y = math.rad(0);
-        GT.WS[ws].angles = { {math.rad(140), math.rad(-5), math.rad(-5), math.rad(60)} };
+        GT.WS[ws].angles = {
+            {math.rad(140), math.rad(20), math.rad(-5), math.rad(60)},
+            {math.rad(20),  math.rad(-5), math.rad(15), math.rad(60)},
+        };
     elseif i == 2 then
         GT.WS[ws].reference_angle_Y = math.rad(0);
-        GT.WS[ws].angles = { {math.rad(165), math.rad(-5), math.rad(-5), math.rad(60)} };
+        GT.WS[ws].angles = {
+            {math.rad(165), math.rad(35), math.rad(-5), math.rad(60)},
+            {math.rad(35),  math.rad(0),  math.rad(0),  math.rad(60)},
+            {math.rad(0),   math.rad(-5), math.rad(5),  math.rad(60)},
+        };
     elseif i == 3 then
         GT.WS[ws].reference_angle_Y = math.rad(180);
-        GT.WS[ws].angles = { {math.rad(180), math.rad(35), math.rad(-5), math.rad(60)} };
+        GT.WS[ws].angles = { {math.rad(180), math.rad(40), math.rad(-5), math.rad(60)} };
     end
     GT.WS[ws].LN = { [1] = {} };
     set_recursive_metatable(GT.WS[ws].LN[1], GT_t.WS_t.UK_6in_BL_MkXXII_Twin.LN[1]);
@@ -523,41 +546,60 @@ for i = 1, 6 do
     GT.WS[ws].area = 'AA_47_' .. i;
     GT.WS[ws].drawArgument1 = 50 + (i*2) - 2; -- 50, 52, 54, 56, 58, 60
     GT.WS[ws].drawArgument2 = 50 + (i*2) - 1; -- 51, 53, 55, 57, 59, 61
-    GT.WS[ws].LN = {};
-    GT.WS[ws].LN[1] = {};
+    GT.WS[ws].LN = { [1] = {}, [2] = {} };
     set_recursive_metatable(GT.WS[ws].LN[1], GT_t.WS_t.UK_120mm_QF_MkVIII_Single.LN[1]);
+    set_recursive_metatable(GT.WS[ws].LN[2], GT_t.WS_t.UK_120mm_QF_MkVIII_Single.LN[2]);
     if i <= 3 then
         GT.WS[ws].LN[1].depends_on_unit = ha_starboard_trackers;
+        GT.WS[ws].LN[2].depends_on_unit = ha_starboard_trackers;
     else
         GT.WS[ws].LN[1].depends_on_unit = ha_port_trackers;
+        GT.WS[ws].LN[2].depends_on_unit = ha_port_trackers;
     end
     
     if i == 1 then
-        -- Mount 1: Starboard Forecastle (Stowed forward 0 deg, sweeps +5 deg to -165 deg Starboard)
+        -- Mount 1: Starboard Forecastle
         GT.WS[ws].reference_angle_Y = math.rad(0);
-        GT.WS[ws].angles = { {math.rad(5), math.rad(-165), math.rad(-5), math.rad(85)} };
+        GT.WS[ws].angles = {
+            {math.rad(5),    math.rad(0),    math.rad(5),  math.rad(85)},
+            {math.rad(0),    math.rad(-10),  math.rad(0),  math.rad(85)},
+            {math.rad(-10),  math.rad(-160), math.rad(-5), math.rad(85)},
+            {math.rad(-160), math.rad(-165), math.rad(0),  math.rad(85)},
+        };
     elseif i == 2 then
-        -- Mount 2: Starboard Boat Deck (Stowed aft -180 deg, sweeps -15 deg to -180 deg Stern)
+        -- Mount 2: Starboard Boat Deck
         GT.WS[ws].reference_angle_Y = math.rad(-180);
-        GT.WS[ws].angles = { {math.rad(-15), math.rad(-180), math.rad(-5), math.rad(85)} };
+        GT.WS[ws].angles = {
+            {math.rad(-15),  math.rad(-155), math.rad(0), math.rad(85)},
+            {math.rad(-155), math.rad(-180), math.rad(5), math.rad(85)},
+        };
     elseif i == 3 then
-        -- Mount 3: Starboard Quarterdeck (Stowed aft -180 deg, sweeps -50 deg to -180 deg Stern)
+        -- Mount 3: Starboard Quarterdeck
         GT.WS[ws].reference_angle_Y = math.rad(-180);
-        GT.WS[ws].angles = { {math.rad(-50), math.rad(-180), math.rad(-5), math.rad(85)} };
+        GT.WS[ws].angles = { {math.rad(-50), math.rad(-180), math.rad(0), math.rad(85)} };
     elseif i == 4 then
-        -- Mount 4: Port Quarterdeck (Stowed aft +180 deg, sweeps +180 deg Stern down to +50 deg Port)
+        -- Mount 4: Port Quarterdeck
         GT.WS[ws].reference_angle_Y = math.rad(180);
-        GT.WS[ws].angles = { {math.rad(180), math.rad(50), math.rad(-5), math.rad(85)} };
+        GT.WS[ws].angles = { {math.rad(180), math.rad(50), math.rad(0), math.rad(85)} };
     elseif i == 5 then
-        -- Mount 5: Port Boat Deck (Stowed aft +180 deg, sweeps +180 deg Stern down to +15 deg Port)
+        -- Mount 5: Port Boat Deck
         GT.WS[ws].reference_angle_Y = math.rad(180);
-        GT.WS[ws].angles = { {math.rad(180), math.rad(15), math.rad(-5), math.rad(85)} };
+        GT.WS[ws].angles = {
+            {math.rad(180), math.rad(155), math.rad(5), math.rad(85)},
+            {math.rad(155), math.rad(15),  math.rad(0), math.rad(85)},
+        };
     elseif i == 6 then
-        -- Mount 6: Port Forecastle (Stowed forward 0 deg, sweeps +165 deg Port down to -5 deg Bow)
+        -- Mount 6: Port Forecastle
         GT.WS[ws].reference_angle_Y = math.rad(0);
-        GT.WS[ws].angles = { {math.rad(165), math.rad(-5), math.rad(-5), math.rad(85)} };
+        GT.WS[ws].angles = {
+            {math.rad(165), math.rad(160), math.rad(0),  math.rad(85)},
+            {math.rad(160), math.rad(10),  math.rad(-5), math.rad(85)},
+            {math.rad(10),  math.rad(0),   math.rad(0),  math.rad(85)},
+            {math.rad(0),   math.rad(-5),  math.rad(5),  math.rad(85)},
+        };
     end
     GT.WS[ws].LN[1].BR = { {connector_name = 'POINT_AA_47_' .. i, recoilArgument = 150 + i, recoilTime = 0.2} };
+    GT.WS[ws].LN[2].BR = { {connector_name = 'POINT_AA_47_' .. i, recoilArgument = 150 + i, recoilTime = 0.2} };
 end
 
 --------------------------------------------------------------------------------------
@@ -576,19 +618,20 @@ for i = 1, 3 do
     GT.WS[ws].drawArgument1 = 62 + (i*2) - 2; -- 62, 64, 66
     GT.WS[ws].drawArgument2 = 62 + (i*2) - 1; -- 63, 65, 67
     if i == 1 then
-        -- Starboard Funnel Mount: stowed broadside (-90 deg), sweeps -15 deg to -165 deg Starboard
+        -- Starboard Funnel Mount: stowed broadside (-90 deg), sweeps -20 deg to -165 deg Starboard
         GT.WS[ws].reference_angle_Y = math.rad(-90);
-        GT.WS[ws].angles = { {math.rad(-15), math.rad(-165), math.rad(-5), math.rad(85)} };
+        GT.WS[ws].angles = { {math.rad(-20), math.rad(-165), math.rad(-5), math.rad(85)} };
     elseif i == 2 then
-        -- Port Funnel Mount: stowed broadside (+90 deg), sweeps +165 deg down to +15 deg Port
+        -- Port Funnel Mount: stowed broadside (+90 deg), sweeps +165 deg down to +20 deg Port
         GT.WS[ws].reference_angle_Y = math.rad(90);
-        GT.WS[ws].angles = { {math.rad(165), math.rad(15), math.rad(-5), math.rad(85)} };
+        GT.WS[ws].angles = { {math.rad(165), math.rad(20), math.rad(-5), math.rad(85)} };
     else
-        -- Stern Bandstand Mount: stowed aft (180 deg), sweeps aft hemisphere (+180 to +45 Port, and -45 to -180 Stbd)
+        -- Stern Bandstand Mount: stowed aft (180 deg), sweeps aft hemisphere (+180 to +50 Port, and -50 to -180 Stbd)
         GT.WS[ws].reference_angle_Y = math.rad(180);
+        GT.WS[ws].angles_mech = { {math.rad(-50), math.rad(50), math.rad(-5), math.rad(85)} };
         GT.WS[ws].angles = { 
-            {math.rad(180), math.rad(45), math.rad(-5), math.rad(85)} ,
-            {math.rad(-45), math.rad(-180), math.rad(-5), math.rad(85)}
+            {math.rad(180), math.rad(50), math.rad(-5), math.rad(85)} ,
+            {math.rad(-50), math.rad(-180), math.rad(-5), math.rad(85)}
         };
     end
     GT.WS[ws].LN = {};
@@ -652,10 +695,10 @@ for i = 1, 2 do
     GT.WS[ws].drawArgument2 = 73 + (i*2) - 1; -- 74, 76
     if i == 1 then
         GT.WS[ws].reference_angle_Y = math.rad(-45); -- Starboard Bridge Wing rest
-        GT.WS[ws].angles = { {math.rad(30), math.rad(-160), math.rad(-10), math.rad(80)} };
+        GT.WS[ws].angles = { {math.rad(0), math.rad(-160), math.rad(-5), math.rad(80)} };
     else
         GT.WS[ws].reference_angle_Y = math.rad(45);  -- Port Bridge Wing rest
-        GT.WS[ws].angles = { {math.rad(160), math.rad(-30), math.rad(-10), math.rad(80)} };
+        GT.WS[ws].angles = { {math.rad(160), math.rad(0), math.rad(-5), math.rad(80)} };
     end
     GT.WS[ws].LN = {};
     GT.WS[ws].LN[1] = {};
@@ -686,7 +729,8 @@ GT.ThreatRange = GT.airWeaponDist;
 GT.Singleton = "yes";
 GT.mapclasskey = "P0091000066"; -- This is CC, but should be BB for Battleship, but not in MissionEditor\data\NewMap\images
 GT.attribute = {wsType_Navy, wsType_Ship, wsType_ArmedShip, WSTYPE_PLACEHOLDER,
-    "Battleships",
+    "Cruisers",
+    "Heavy armed ships",
     "Armed Air Defence",
     "RADAR_BAND1_FOR_ARM",
     "RADAR_BAND2_FOR_ARM",

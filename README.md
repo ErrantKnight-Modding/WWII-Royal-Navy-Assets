@@ -1,17 +1,17 @@
-# WWII Royal Navy Assets for DCS World (v1.1.0)
+# WWII Royal Navy Assets for DCS World (v1.2.0)
 
-Historical World War II Royal Navy surface fleet asset pack developed for Eagle Dynamics DCS World — featuring 8 warships, custom historical ballistics & fire control directors, carrier flight deck operations, multi-LOD optimization, dynamic Kelvin wakes, and **35 historical 1940–1945 liveries**.
+Historical World War II Royal Navy surface fleet asset pack developed for Eagle Dynamics DCS World — featuring 8 warships, custom historical ballistics & fire control directors, custom omnidirectional naval weapon audio, dual-purpose AA/surface combat systems, carrier flight deck operations, multi-LOD optimization, dynamic Kelvin wakes, and **35 historical 1940–1945 liveries**.
 
 ---
 
-## 📥 Downloads (GitHub Releases `1.1.0`)
+## 📥 Downloads (GitHub Releases `1.2.0`)
 
-Starting with **v1.1.0**, the mod is distributed as **two independent, OvGME-ready packages** so Core updates stay fast and dedicated multiplayer servers stay lightweight:
+The mod is distributed as **two independent, OvGME-ready packages** so Core updates stay fast and dedicated multiplayer servers stay lightweight. Only the **Core** package changed in `v1.2.0` — the `v1.1.0` **Historical Liveries** pack remains 100% compatible without re-downloading:
 
 | Package | Size | Contents |
 | :--- | :---: | :--- |
-| **[WWII_Royal_Navy_Assets_v1.1.0_Core.zip](https://github.com/ErrantKnight-Modding/WWII-Royal-Navy-Assets/releases/download/1.1.0/WWII_Royal_Navy_Assets_v1.1.0_Core.zip)** *(Required)* | **405.82 MB** | All 8 warships, LOD 0–3 meshes, collision shells, weapons/directors, carrier flight decks, dynamic wakes, Encyclopedia, and `AP 507C` / carrier ops defaults |
-| **[WWII_Royal_Navy_Assets_v1.1.0_Historical_Liveries.zip](https://github.com/ErrantKnight-Modding/WWII-Royal-Navy-Assets/releases/download/1.1.0/WWII_Royal_Navy_Assets_v1.1.0_Historical_Liveries.zip)** *(Optional)* | **915.30 MB** | Companion plugin with **35 historical 1940–1945 Royal Navy & Commonwealth camouflage liveries** across all 8 ships |
+| **[WWII_Royal_Navy_Assets_v1.2.0_Core.zip](https://github.com/ErrantKnight-Modding/WWII-Royal-Navy-Assets/releases/download/1.2.0/WWII_Royal_Navy_Assets_v1.2.0_Core.zip)** *(Required)* | **405.83 MB** | All 8 warships, LOD 0–3 meshes, collision shells, weapons/directors, custom omnidirectional naval audio, carrier flight decks, dynamic wakes, Encyclopedia, and `AP 507C` / carrier ops defaults |
+| **[WWII_Royal_Navy_Assets_v1.1.0_Historical_Liveries.zip](https://github.com/ErrantKnight-Modding/WWII-Royal-Navy-Assets/releases/download/1.1.0/WWII_Royal_Navy_Assets_v1.1.0_Historical_Liveries.zip)** *(Optional — unchanged from `v1.1.0`)* | **915.30 MB** | Companion plugin with **35 historical 1940–1945 Royal Navy & Commonwealth camouflage liveries** across all 8 ships *(100% compatible with `v1.2.0` Core — no re-download needed)* |
 
 ---
 
@@ -33,17 +33,20 @@ Starting with **v1.1.0**, the mod is distributed as **two independent, OvGME-rea
 ## 📦 Installation
 
 ### Players (OvGME / Open Mod Manager / JSGME — Recommended)
+> *If upgrading from `v1.1.0`, disable/remove and replace only the Core module — keep your existing `v1.1.0` Historical Liveries pack enabled.*  
+> *If upgrading from `v1.0.0`, remove your old `Saved Games\DCS\Mods\tech\WWII Royal Navy Assets` folder first.*
 1. Point your Mod Manager profile root directory to `%USERPROFILE%\Saved Games\DCS\`.
-2. Import **`WWII_Royal_Navy_Assets_v1.1.0_Core.zip`** (required) and optionally **`WWII_Royal_Navy_Assets_v1.1.0_Historical_Liveries.zip`**, then enable both.
+2. Import **`WWII_Royal_Navy_Assets_v1.2.0_Core.zip`** (required) and optionally **`WWII_Royal_Navy_Assets_v1.1.0_Historical_Liveries.zip`**, then enable both.
 
 ### Players (Manual Install)
+> *If upgrading from `v1.1.0`, delete/replace only `Saved Games\DCS\Mods\tech\WWII Royal Navy Assets` and leave `WWII Royal Navy Assets - Historical Liveries` intact.*  
 > *If upgrading from `v1.0.0`, remove your old `Saved Games\DCS\Mods\tech\WWII Royal Navy Assets` folder first.*
-1. Open **`WWII_Royal_Navy_Assets_v1.1.0_Core.zip`**, open the folder inside (`WWII_Royal_Navy_Assets_v1.1.0_Core`), and extract **`Mods`** into `%USERPROFILE%\Saved Games\DCS\`.
-2. *(Optional)* Repeat for **`WWII_Royal_Navy_Assets_v1.1.0_Historical_Liveries.zip`**.
+1. Open **`WWII_Royal_Navy_Assets_v1.2.0_Core.zip`**, open the folder inside (`WWII_Royal_Navy_Assets_v1.2.0_Core`), and extract **`Mods`** into `%USERPROFILE%\Saved Games\DCS\`.
+2. *(Optional)* Repeat for **`WWII_Royal_Navy_Assets_v1.1.0_Historical_Liveries.zip`** if not already installed.
 3. Verify `Saved Games\DCS\Mods\tech\WWII Royal Navy Assets\entry.lua` exists (and `Saved Games\DCS\Mods\tech\WWII Royal Navy Assets - Historical Liveries\entry.lua` if installing liveries).
 
 ### Developers (Repo Clone)
-Run `scripts\link_to_dcs.bat` to create an NTFS junction linking `Asset Pack\` directly into `%USERPROFILE%\Saved Games\DCS\Mods\tech\WWII Royal Navy Assets`, and run `scripts\package_release.py v1.1.0 --mode split` to build redistributable OvGME archives.
+Run `scripts\link_to_dcs.bat` to create an NTFS junction linking `Asset Pack\` directly into `%USERPROFILE%\Saved Games\DCS\Mods\tech\WWII Royal Navy Assets`, and run `scripts\package_release.py v1.2.0 --mode core-only` (or `--mode split`) to build redistributable OvGME archives.
 
 ---
 
@@ -52,6 +55,7 @@ Run `scripts\link_to_dcs.bat` to create an NTFS junction linking `Asset Pack\` d
 * `entry.lua` - DCS World Core plugin declaration (`"WWII Royal Navy Assets"`).
 * `Units/` - Self-contained warship definitions (`Shapes/`, `Textures/`, `Liveries/`).
 * `Weapons/` - Royal Navy artillery, directors, shells, and torpedo systems.
+* `Sounds/` - Omnidirectional `.sdef` weapon audio profiles and per-ship Navy Sounders.
 * `Encyclopedia/` - In-game historical briefing text and specs.
 
 ---
@@ -69,4 +73,4 @@ If you enjoy the WWII Royal Navy fleet pack and would like to support ongoing de
 * **Original 3D Warship Models**: Created and generously shared for free by **Thomas Beerens**.
   * Patreon: [Thomas Beerens on Patreon](https://www.patreon.com/ThomasBeerens)
   * Free 3D Assets Index: [Links to all free models](https://www.patreon.com/ThomasBeerens/posts/links-to-all-52168097)
-* **DCS World Conversion & Systems**: Model optimization, rigging, animations, EDM export, collision shells, multi-LOD pipeline, weapon definitions, radar/optical directors, flight deck systems, historical liveries, and Lua integration by **ErrantKnight**.
+* **DCS World Conversion & Systems**: Model optimization, rigging, animations, EDM export, collision shells, multi-LOD pipeline, weapon definitions, radar/optical directors, custom naval audio, flight deck systems, historical liveries, and Lua integration by **ErrantKnight**.

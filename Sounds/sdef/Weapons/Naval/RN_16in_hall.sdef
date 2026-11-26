@@ -1,0 +1,16 @@
+wave = {
+    "Effects/Weapons/Cannon/155mmGun_Hall_1",
+    "Effects/Weapons/Cannon/155mmGun_Hall_2",
+    "Effects/Weapons/Cannon/155mmGun_Hall_3",
+    "Effects/Weapons/Cannon/155mmGun_Hall_4",
+    "Effects/Weapons/Cannon/155mmGun_Hall_5",
+    "Effects/Weapons/Cannon/155mmGun_Hall_6",
+    "Effects/Weapons/Cannon/155mmGun_Hall_7",
+    "Effects/Weapons/Cannon/155mmGun_Hall_8",
+}
+inner_radius = 280
+outer_radius = 8500
+detached = true
+pitch = 0.72
+pitch_random = 0.04
+gain = 1.9
